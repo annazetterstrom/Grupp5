@@ -1,5 +1,13 @@
 
 nav{
     text-align: center; 
-    
+
+}
+
+.img{
+    display: block; 
+    width: 100px;
+    height: auto;
+    display: inline; 
+    text-align: center;
 }
