@@ -12,3 +12,9 @@ nav{
     height: auto;
     text-align: center;
 }
+
+.anna{
+    text-align: center; 
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 20px;
+}
