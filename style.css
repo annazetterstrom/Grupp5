@@ -1,4 +1,8 @@
 
+.frida{
+    color: blue;
+}
+
 nav{
     text-align: center; 
 }
@@ -12,4 +16,5 @@ nav{
 
 .ellinor{
     background-color: rgb(254, 112, 112);
+
 }
