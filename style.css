@@ -1,21 +1,82 @@
 
-.frida{
-    color: blue;
-}
 
-nav{
-    text-align: center; 
+ .tengil {
+  font-size: 5000px;
 }
-
-.img{
-    display: block; 
-    width: 100px;
-    height: auto;
+  .frida{
+      color: blue;
+  }
+  
+  nav{
+      text-align: center; 
+  }
+  
+  .img{
+      display: block; 
+      width: 100px;
+      height: auto;
+      text-align: center;
+  }
+  
+  
+  
+  /*ANNA start */
+  
+  
+  .anna{
     text-align: center;
+    font-family: 'Courier New', Courier, monospace; 
 }
 
-.ellinor{
-    background-color: rgb(254, 112, 112);
-
+.left{
+    text-align: left; 
 }
+.div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    background: indigo;
+    position: relative;
+    -webkit-animation: mymove 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 
+@-webkit-keyframes mymove {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 200px;
+    }
+}
+/* Standard syntax */
+@keyframes mymove {
+    from {
+        left: 400px;
+    }
+
+    to {
+        left: 600px;
+    }
+}
+  
+  /*ANNA Slut*/
+
+  /*ELLINOR Start*/
+
+
+  
+  /*ELLINOR Slut*/
+
+/* tengils kod börjar */
+
+/* tengils kod slutar */
+
+
+/*FRIDA start */
+/*FRIDA sluta*/
+
 
