@@ -7,9 +7,7 @@
       color: blue;
   }
   
-  nav{
-      text-align: center; 
-  }
+
   
   .img{
       display: block; 
@@ -66,8 +64,42 @@
   /*ANNA Slut*/
 
   /*ELLINOR Start*/
+  .FT{
+      text-align: center;
+      background-color: rgb(205, 138, 138);
+      padding: 60px;
+      font-family: serif;
+      margin: auto;
+  }
+  nav{
+      text-align: center;
+      background-color: rgb(142, 142, 142);
+      padding: 30px;
+  }
+  nav>a{
+    text-align: center; 
+    padding: 12px 30px 12px 30px;
+    text-decoration: none;
+    color: #000;
 
+}
+nav a:hover{
+    color: rgb(190, 42, 42);
+}
+.active{
+    color: rgb(255, 255, 255);
+}
 
+.main-content{
+    text-align: center;
+    height: auto;
+    padding: 35px;
+}
+footer{
+    background-color: rgb(216, 216, 216, 0.27);
+    padding: 20px;
+    text-align: center;
+}
   
   /*ELLINOR Slut*/
 
