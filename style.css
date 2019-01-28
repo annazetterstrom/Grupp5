@@ -1,20 +1,13 @@
-
-
- .tengil {
-  font-size: 5000px;
+* {
+    box-sizing: border-box;
 }
-  .frida{
-      color: blue;
-  }
-  
 
-  
-  .img{
-      display: block; 
-      width: 100px;
-      height: auto;
-      text-align: center;
-  }
+.img{
+    display: block; 
+    width: 100px;
+    height: auto;
+    text-align: center;
+}
   
   
   
@@ -29,7 +22,7 @@
 .left{
     text-align: left; 
 }
-.div {
+.div { /* byt klassnamn pls */
     width: 50px;
     height: 50px;
     border-radius: 50%; 
@@ -104,7 +97,29 @@ footer{
   /*ELLINOR Slut*/
 
 /* tengils kod börjar */
-
+.code, .result {
+    width: 49%;
+    display: inline-block;
+    text-align: left;
+    background-color: #fff;
+}
+.explanation {
+    text-align: left;
+}
+.result {
+    float: right;
+}
+.subject {
+    padding: 5px;
+    background-color: #eee;
+    box-shadow: 2px 2px 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.subject h2, .subject p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /* tengils kod slutar */
 
 
