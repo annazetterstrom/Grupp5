@@ -1,3 +1,20 @@
+
 .frida{
     color: blue;
+}
+
+nav{
+    text-align: center; 
+}
+
+.img{
+    display: block; 
+    width: 100px;
+    height: auto;
+    text-align: center;
+}
+
+.ellinor{
+    background-color: rgb(254, 112, 112);
+
 }
