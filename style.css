@@ -1,6 +1,8 @@
-
 .tengil {
   font-size: 5000px;
+}
+.frida{
+    color: blue;
 }
 
 nav{
@@ -16,4 +18,5 @@ nav{
 
 .ellinor{
     background-color: rgb(254, 112, 112);
+
 }
