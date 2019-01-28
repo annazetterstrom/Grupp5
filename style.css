@@ -1,4 +1,6 @@
 
+
+
 nav{
     text-align: center; 
 
@@ -8,6 +10,5 @@ nav{
     display: block; 
     width: 100px;
     height: auto;
-    display: inline; 
     text-align: center;
 }
