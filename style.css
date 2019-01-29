@@ -62,33 +62,40 @@
       text-align: center;
       background-color: rgb(0, 0, 0);
       padding: 60px;
-      font-family: serif;
+      font-family: 'Old Standard TT', serif;
       margin: auto;
       color: #eb47bd;
+      font-size: 40px;
+
   }
   .FTH{
     text-align: center;
     color:#d9d9d9;
     padding: 60px;
-    font-family: serif;
+    font-family: 'Old Standard TT', serif;
     margin: auto;
     background-color: #e44d26;
+    font-size: 40px;
+
 }
 .FTJ{
     text-align: center;
     color:#000000;
     padding: 60px;
-    font-family: serif;
+    font-family: 'Old Standard TT', serif;
     margin: auto;
     background-color: #f7df1e;
+    font-size: 40px;
+
 }
 .FTC{
     text-align: center;
     color:#d9d9d9;
     padding: 60px;
-    font-family: serif;
+    font-family: 'Old Standard TT', serif;
     margin: auto;
     background-color: #0171bf;
+    font-size: 40px;
 }
   nav{
       text-align: center;
@@ -100,6 +107,7 @@
     padding: 12px 30px 12px 30px;
     text-decoration: none;
     color: #000;
+    font-size: 20px;
 
 }
 nav a:hover{
