@@ -164,4 +164,10 @@ video{
 
 /*FRIDA start */
 
+.clearfix{
+    clear: both;
+}
+
+
+
 /*FRIDA sluta*/
