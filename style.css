@@ -94,7 +94,7 @@
 }
 nav {
   text-align: center;
-  background-color: rgb(142, 142, 142);
+  background-color: rgba(142, 142, 142, 0.438);
   padding: 30px;
 }
 nav > a {
