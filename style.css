@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
 }
 
 .img{
@@ -67,11 +68,27 @@
   }
   .FTH{
     text-align: center;
-    background-color:#d9d9d9;
+    color:#d9d9d9;
     padding: 60px;
     font-family: serif;
     margin: auto;
-    color: #e44d26;
+    background-color: #e44d26;
+}
+.FTJ{
+    text-align: center;
+    color:#000000;
+    padding: 60px;
+    font-family: serif;
+    margin: auto;
+    background-color: #f7df1e;
+}
+.FTC{
+    text-align: center;
+    color:#d9d9d9;
+    padding: 60px;
+    font-family: serif;
+    margin: auto;
+    background-color: #0171bf;
 }
   nav{
       text-align: center;
