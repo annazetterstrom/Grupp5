@@ -177,6 +177,23 @@ video{
   margin-top: 10px;
   margin-bottom: 10px;
 }
+#bonus1:hover {
+  color: #fff;
+  background-color: #000;
+}
+.bonus {
+  width: fit-content;
+  padding: 5px;
+  background-color: #3d3;
+}
+
+#challenge1 {
+  display: none;
+}
+canvas {
+  background-color: #fff;
+}
+
 /* tengils kod slutar */
 
 /*FRIDA start */
