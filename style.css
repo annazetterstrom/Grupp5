@@ -132,6 +132,20 @@ video{
     margin: auto;
 }
 
+.xdnav a:hover {
+    color: #eb47bd;
+  }
+.htmlnav a:hover {
+      color: #e44d26;
+    }
+
+.cssnav a:hover {
+      color: #0171bf;
+    }
+.jnav a:hover {
+        color: #f7df1e;
+      }   
+
 /*ELLINOR Slut*/
 
 /* tengils kod börjar */
@@ -147,6 +161,9 @@ video{
 }
 .result {
   float: right;
+}
+.code{
+    white-space: pre-wrap;
 }
 .subject {
   padding: 5px;
@@ -164,13 +181,10 @@ video{
 
 /*FRIDA start */
 
-<<<<<<< HEAD
-=======
 .clearfix{
     clear: both;
 }
 
 
 
->>>>>>> 68c28fd86e4bde3df12ca837cffe114eb735d72c
 /*FRIDA sluta*/
