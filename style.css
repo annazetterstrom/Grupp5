@@ -1,37 +1,35 @@
 * {
-    box-sizing: border-box;
-    margin: 0px;
+  box-sizing: border-box;
+  margin: 0px;
 }
 
-.img{
-    display: block; 
-    width: 100px;
-    height: auto;
-    text-align: center;
-}
-  
-  
-  
-  /*ANNA start */
-  
-  
-  .anna{
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace; 
+.img {
+  display: block;
+  width: 100px;
+  height: auto;
+  text-align: center;
 }
 
-.left{
-    text-align: left; 
+/*ANNA start */
+
+.anna {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
 }
-.div { /* byt klassnamn pls */
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; 
-    background: indigo;
-    position: relative;
-    -webkit-animation: mymove 5s infinite;
-    /* Safari 4.0 - 8.0 */
-    animation: mymove 5s infinite;
+
+.left {
+  text-align: left;
+}
+.div {
+  /* byt klassnamn pls */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: indigo;
+  position: relative;
+  -webkit-animation: mymove 5s infinite;
+  /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
 }
 
 /* Safari 4.0 - 8.0 
@@ -46,116 +44,123 @@
 }
 /* Standard syntax */
 @keyframes mymove {
-    from {
-        left: 400px;
-    }
-
-    to {
-        left: 600px;
-    }
-}
-  
-  /*ANNA Slut*/
-
-  /*ELLINOR Start*/
-  .FTX{
-      text-align: center;
-      background-color: rgb(0, 0, 0);
-      padding: 60px;
-      font-family: 'Old Standard TT', serif;
-      margin: auto;
-      color: #eb47bd;
-      font-size: 40px;
-
+  from {
+    left: 400px;
   }
-  .FTH{
-    text-align: center;
-    color:#d9d9d9;
-    padding: 60px;
-    font-family: 'Old Standard TT', serif;
-    margin: auto;
-    background-color: #e44d26;
-    font-size: 40px;
 
-}
-.FTJ{
-    text-align: center;
-    color:#000000;
-    padding: 60px;
-    font-family: 'Old Standard TT', serif;
-    margin: auto;
-    background-color: #f7df1e;
-    font-size: 40px;
-
-}
-.FTC{
-    text-align: center;
-    color:#d9d9d9;
-    padding: 60px;
-    font-family: 'Old Standard TT', serif;
-    margin: auto;
-    background-color: #0171bf;
-    font-size: 40px;
-}
-  nav{
-      text-align: center;
-      background-color: rgb(142, 142, 142);
-      padding: 30px;
+  to {
+    left: 600px;
   }
-  nav>a{
-    text-align: center; 
-    padding: 12px 30px 12px 30px;
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-
-}
-nav a:hover{
-    color: rgb(190, 42, 42);
-}
-.active{
-    color: rgb(255, 255, 255);
 }
 
-.main-content{
-    text-align: center;
+/*ANNA Slut*/
+
+/*ELLINOR Start*/
+.FTX {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  padding: 60px;
+  font-family: "Old Standard TT", serif;
+  margin: auto;
+  color: #eb47bd;
+  font-size: 40px;
+}
+.FTH {
+  text-align: center;
+  color: #d9d9d9;
+  padding: 60px;
+  font-family: "Old Standard TT", serif;
+  margin: auto;
+  background-color: #e44d26;
+  font-size: 40px;
+}
+.FTJ {
+  text-align: center;
+  color: #000000;
+  padding: 60px;
+  font-family: "Old Standard TT", serif;
+  margin: auto;
+  background-color: #f7df1e;
+  font-size: 40px;
+}
+.FTC {
+  text-align: center;
+  color: #d9d9d9;
+  padding: 60px;
+  font-family: "Old Standard TT", serif;
+  margin: auto;
+  background-color: #0171bf;
+  font-size: 40px;
+}
+nav {
+  text-align: center;
+  background-color: rgb(142, 142, 142);
+  padding: 30px;
+}
+nav > a {
+  text-align: center;
+  padding: 12px 30px 12px 30px;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+nav a:hover {
+  color: rgb(190, 42, 42);
+}
+.active {
+  color: rgb(255, 255, 255);
+}
+
+.main-content {
+  text-align: center;
+  height: auto;
+  padding: 35px;
+}
+footer {
+  background-color: rgb(216, 216, 216, 0.27);
+  padding: 20px;
+  text-align: center;
+}
+
+video{
+    width: 650px;
     height: auto;
-    padding: 35px;
 }
-footer{
-    background-color: rgb(216, 216, 216, 0.27);
-    padding: 20px;
-    text-align: center;
+
+.xd-tutorial{
+    width: fit-content;
+    margin: auto;
 }
-  
-  /*ELLINOR Slut*/
+
+/*ELLINOR Slut*/
 
 /* tengils kod börjar */
-.code, .result {
-    width: 49%;
-    display: inline-block;
-    text-align: left;
-    background-color: #fff;
+.code,
+.result {
+  width: 49%;
+  display: inline-block;
+  text-align: left;
+  background-color: #fff;
 }
 .explanation {
-    text-align: left;
+  text-align: left;
 }
 .result {
-    float: right;
+  float: right;
 }
 .subject {
-    padding: 5px;
-    background-color: #eee;
-    box-shadow: 2px 2px 20px;
-    margin-bottom: 40px;
-    margin-top: 40px;
+  padding: 5px;
+  background-color: #eee;
+  box-shadow: 2px 2px 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
-.subject h2, .subject p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.subject h2,
+.subject p {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 /* tengils kod slutar */
-
 
 /*FRIDA start */
 
@@ -166,5 +171,3 @@ footer{
 
 
 /*FRIDA sluta*/
-
-
