@@ -151,6 +151,11 @@ footer{
 
 /*FRIDA start */
 
+.clearfix{
+    clear: both;
+}
+
+
 
 /*FRIDA sluta*/
 
