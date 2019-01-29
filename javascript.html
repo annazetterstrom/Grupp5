@@ -24,34 +24,32 @@
     </nav>
     <div class="main-content">
         <img class="img" src="./Images/js.png" alt="js">
-        <h1>Måla i canvas med JS</h1>
+        <h1>Javascript tutorial</h1>
+        <h2>Måla i canvas med JS</h2>
         <p>
             På den här sidan kommer vi gå igenom hur man målar enkla geometriska figurer i canvaselementet med hjälp av javascript. 
         </p>
 
         <section class="subject">
             <div class="explanation">
-                <h2>Lorem ipsum</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rem quaerat at quod, labore distinctio
-                    soluta laborum minus ullam, modi voluptatem accusamus! Expedita, sapiente molestiae! Et distinctio
-                    unde dolorum possimus.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error eos quam facere id ad neque,
-                    possimus itaque suscipit dolore repellat. Quasi quae quas numquam minima vitae architecto et rerum
-                    officia?</p>
+                <h2>Hämta canvas-referensen och måla en kvadrat</h2>
+                <p>
+                    För att måla i canvaselementet med JS kan man anropa metoden getContext('2d'). Den returnerar ett js-object (canvasreferensen) som bland annat låter användaren måla olika geometriska figurer. Det här kodexemplet visar hur man använder canvasreferensen för att måla en kvadrat i en canvas.
+                </p>
             </div>
             <hr>
             <div class="code">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tempore expedita ducimus cumque velit
-                    possimus ab, neque temporibus omnis illum soluta rerum minus saepe commodi dolorem quas. Ullam,
-                    natus tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugit dignissimos
-                    praesentium, corporis quibusdam aliquam maiores libero quisquam quo sit magnam cumque esse
-                    similique est expedita velit. Eum, rerum voluptas?</p>
+                let rectcanvas = document.getElementById('rectcanvas');
+                let ctx = rectcanvas.getContext('2d');
+                let xstart = 200, ystart = 40, xsize = 50, ysize = 100;
+                ctx.rect(xstart, ystart, xsize, ysize);
+                ctx.stroke();
             </div>
             <div class="result">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum velit accusamus, incidunt aspernatur
-                    enim itaque voluptas? Sed architecto molestias, repellat dolor, vel omnis ducimus deleniti aliquam
-                    optio molestiae nihil fuga?</p>
+                <canvas id="rectcanvas"></canvas>
             </div>
+            <br class="clearfix">
+
         </section>
 
     </div>
@@ -59,6 +57,8 @@
         <p>Copyright &copy; 2019 &bull; Frida, Ellinor, Anna, Niklas</p>
     </footer>
 
+
+    <script src="javascript.js"></script>
 </body>
 
 </html>
