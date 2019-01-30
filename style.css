@@ -222,15 +222,14 @@ canvas {
   clear: both;
 }
 
-.kod-förklaring{
+.padding{
+  padding-top:16px;
   text-align: center;
-  margin: 60px;
 }
-.code-pic{
-  width: 300px; 
-  
- 
-}
+
+
+
+
 
 
 
