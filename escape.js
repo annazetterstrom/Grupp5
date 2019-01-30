@@ -1,14 +1,11 @@
+let result = document.getElementsByClassName('result');
+let code = document.getElementsByClassName('code');
+for(let i=0;i<result.length;i++){
+    let resulttext = result[i].innerHTML;
 
-grej = true;
-let taggtext; //sätt lika med texten som ska konverteras
-while(grej){
-    grej = false;
-    if(taggar.innerText=="<"){
-        taggtext = taggtext.replace("<", "&lt;");
-        grej = true;
+    while(resulttext.includes('<') || resulttext.includes('>')){
+        resulttext = resulttext.replace('<', "&lt;");
+        resulttext = resulttext.replace('>', "&gt;");
     }
-    if(taggar.innerText==">"){
-        taggtext = taggtext.replace("<", "&gt;");
-        grej = true;
-    }
+    code[i].innerText = resulttext;
 }
