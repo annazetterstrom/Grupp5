@@ -1,6 +1,6 @@
-let taggar = document.getElementById('taggar');
+
 grej = true;
-let taggtext = taggar.innerHTML;
+let taggtext; //sätt lika med texten som ska konverteras
 while(grej){
     grej = false;
     if(taggar.innerText=="<"){
