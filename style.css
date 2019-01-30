@@ -161,9 +161,11 @@ video{
 }
 .result {
   float: right;
+ 
 }
 .code{
     white-space: pre-wrap;
+    overflow: hidden;
 }
 .subject {
   padding: 5px;
@@ -201,6 +203,19 @@ canvas {
 .clearfix{
     clear: both;
 }
+
+.kod-förklaring{
+  text-align: center;
+  margin: 60px;
+}
+.code-pic{
+  width: 300px; 
+  
+ 
+}
+
+
+
 
 
 
