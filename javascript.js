@@ -22,14 +22,67 @@ ctx.fillRect(15, 25, 10, 10); //vänster pupill
 ctx.fillRect(55, 25, 10, 10); //höger pupill
 ctx.fillRect(35, 75, 10, 10); //mun
 
-let bonus1 = document.getElementById('bonus1');
-bonus1.addEventListener('click', revealBonus1);
+let bonus = document.getElementsByClassName('bonus');
+for(let i=0;i<bonus.length;i++){
+    bonus[i].addEventListener('click', revealBonus);
+}
 
-function revealBonus1(){
-    let challenge1 = document.getElementById('challenge1');
-    if(challenge1.style.display == 'block'){
-        challenge1.style.display = 'none';
+let circleCanvas = document.getElementById('circleCanvas');
+ctx = circleCanvas.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(20,10);
+ctx.lineTo(40,30);
+ctx.lineTo(20,50);
+ctx.lineTo(0,30);
+ctx.lineTo(20,10);
+ctx.strokeStyle = 'green';
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(70,30,20,0,Math.PI);
+ctx.lineTo(90,30);
+ctx.fillStyle = 'orange';
+ctx.fill();
+
+let crown = document.getElementById('crown');
+ctx = crown.getContext('2d');
+
+//krona
+ctx.beginPath();
+ctx.moveTo(0,50);
+ctx.moveTo(10,0);
+ctx.lineTo(20,50);
+ctx.lineTo(30,0);
+ctx.lineTo(40,50);
+ctx.lineTo(50,0);
+ctx.lineTo(60,50);
+ctx.lineTo(70,0);
+ctx.lineTo(80,50);
+ctx.lineTo(90,0);
+ctx.lineTo(100,50);
+ctx.lineTo(100,80);
+ctx.lineTo(0,80);
+ctx.lineTo(0,50);
+ctx.fillStyle = 'yellow';
+ctx.fill();
+ctx.beginPath();
+ctx.arc(50,60,5,0,2*Math.PI);
+ctx.fillStyle = 'red';
+ctx.fill();
+ctx.beginPath();
+ctx.arc(20,60,5,0,2*Math.PI);
+ctx.strokeStyle = 'green';
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(80,60,5,0,2*Math.PI);
+ctx.stroke();
+
+function revealBonus(){
+    let data = this.id;
+    let challenge = document.getElementById('challenge' + data);
+    if(challenge.style.display == 'block'){
+        challenge.style.display = 'none';
     } else {
-        challenge1.style.display = 'block';
+        challenge.style.display = 'block';
     }
 }

@@ -12,11 +12,6 @@
 
 /*ANNA start */
 
-.anna {
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-}
-
 .left {
   text-align: left;
 }
@@ -52,7 +47,18 @@
     left: 600px;
   }
 }
-
+#backgroundColor{
+  height: 220px;
+}
+#red{
+  background-color: red;
+}
+#green{
+  background-color: green;
+}
+#blue{
+  background-color: blue; 
+}
 /*ANNA Slut*/
 
 /*ELLINOR Start*/
@@ -188,7 +194,7 @@ li{
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#bonus1:hover {
+#bonus:hover {
   color: #fff;
   background-color: #000;
 }
@@ -198,7 +204,7 @@ li{
   background-color: #3d3;
 }
 
-#challenge1 {
+.challenge {
   display: none;
 }
 canvas {
