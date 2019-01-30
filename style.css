@@ -128,30 +128,41 @@ footer {
   text-align: center;
 }
 
-video{
-    width: 650px;
-    height: auto;
+video {
+  width: 650px;
+  height: auto;
 }
 
-.xd-tutorial{
-    width: fit-content;
-    margin: auto;
+.xd-tutorial {
+  width: fit-content;
+  margin: auto;
+  text-align: left;
 }
 
 .xdnav a:hover {
-    color: #eb47bd;
-  }
+  color: #eb47bd;
+}
 .htmlnav a:hover {
-      color: #e44d26;
-    }
+  color: #e44d26;
+}
 
 .cssnav a:hover {
-      color: #0171bf;
-    }
+  color: #0171bf;
+}
 .jnav a:hover {
-        color: #f7df1e;
-      }   
+  color: #f7df1e;
+}
+li{
+    list-style-type: disc;
+}
 
+.video-text {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 800px;
+    padding: 30px 0 30px;
+    font-size: 16px;
+}
 /*ELLINOR Slut*/
 
 /* tengils kod börjar */
@@ -168,8 +179,8 @@ video{
 .result {
   float: right;
 }
-.code{
-    white-space: pre-wrap;
+.code {
+  white-space: pre-wrap;
 }
 .subject {
   padding: 5px;
@@ -204,10 +215,8 @@ canvas {
 
 /*FRIDA start */
 
-.clearfix{
-    clear: both;
+.clearfix {
+  clear: both;
 }
-
-
 
 /*FRIDA sluta*/
