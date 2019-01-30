@@ -12,8 +12,7 @@
 </head>
 
 <body>
-
-        <h1 class="FTC">Frontend Tutorials</h1>
+    <h1 class="FTC">Frontend Tutorials</h1>
 
     <nav class="cssnav">
         <a href="./index.html">Adobe Xd</a> &bull;
@@ -31,29 +30,27 @@
         <section class="subject">
             <div class="explanation">
                 <h2>Ändra bakgrundsfärg</h2>
-                <p>Med CSS kan man ändra färger på backgrunden. </p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error eos quam facere id ad neque,
-                    possimus itaque suscipit dolore repellat. Quasi quae quas numquam minima vitae architecto et rerum
-                    officia?</p>
+                <p>Med CSS kan man ändra färger på backgrunden. Testa att trycka på knapparna nedan för att ändra
+                    backgrundsfärgen på rutan nedan.</p>
+
             </div>
             <hr>
             <div class="code">
-                <style>
-                    
-                    .red{
-                        background-color: red; 
-                    }
-                </style>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tempore expedita ducimus cumque velit
-                    possimus ab, neque temporibus omnis illum soluta rerum minus saepe commodi dolorem quas. Ullam,
-                    natus tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugit dignissimos
-                    praesentium, corporis quibusdam aliquam maiores libero quisquam quo sit magnam cumque esse
-                    similique est expedita velit. Eum, rerum voluptas?</p>
+                #red{
+                background-color: red;
+                }
+                #green{
+                background-color: green;
+                }
+                #blue{
+                background-color: blue;
+                }
+
             </div>
-            <div class="result">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum velit accusamus, incidunt aspernatur
-                    enim itaque voluptas? Sed architecto molestias, repellat dolor, vel omnis ducimus deleniti aliquam
-                    optio molestiae nihil fuga?</p>
+            <div id="backgroundColor" class="result">
+                <button id="red">Tryck för röd bakgrund</button>
+                <button id="green">Tryck för grön bakgrund</button>
+                <button id="blue">Tryck för blå bakgrund</button>
             </div>
             <br class="clear-fix">
         </section>
@@ -64,6 +61,7 @@
     </footer>
 
 
+    <script src="css.js"></script>
 
 </body>
 
