@@ -12,11 +12,6 @@
 
 /*ANNA start */
 
-.anna {
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-}
-
 .left {
   text-align: left;
 }
@@ -52,7 +47,18 @@
     left: 600px;
   }
 }
-
+#backgroundColor{
+  height: 220px;
+}
+#red{
+  background-color: red;
+}
+#green{
+  background-color: green;
+}
+#blue{
+  background-color: blue; 
+}
 /*ANNA Slut*/
 
 /*ELLINOR Start*/
