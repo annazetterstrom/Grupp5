@@ -121,6 +121,7 @@ nav a:hover {
   text-align: center;
   height: auto;
   padding: 35px;
+  /*background-image: url(images/code.jpg);*/
 }
 footer {
   background-color: rgb(216, 216, 216, 0.27);
@@ -222,6 +223,7 @@ canvas {
   .video{
       width: 300px;
   }
+  
 }
 
 /* tengils kod slutar */
