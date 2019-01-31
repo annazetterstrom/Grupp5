@@ -7,5 +7,5 @@ for(let i=0;i<result.length;i++){
         resulttext = resulttext.replace('<', "&lt;");
         resulttext = resulttext.replace('>', "&gt;");
     }
-    code[i].innerText = resulttext;
+    code[i].innerHTML = resulttext;
 }
