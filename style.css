@@ -219,6 +219,10 @@ canvas {
   .main-content {
     padding: 0;
   }
+
+  .video{
+      width: 300px;
+  }
 }
 
 /* tengils kod slutar */
@@ -229,10 +233,19 @@ canvas {
   clear: both;
 }
 
+h1,h2,h3,h4{
+  font-family: "Old Standard TT", serif;
+}
+
 .padding{
   padding-top:16px;
   text-align: center;
 }
+
+
+
+
+
 
 
 
