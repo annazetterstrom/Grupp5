@@ -218,6 +218,10 @@ canvas {
   .main-content {
     padding: 0;
   }
+
+  .video{
+      width: 300px;
+  }
 }
 
 /* tengils kod slutar */
