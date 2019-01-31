@@ -28,13 +28,12 @@
 
         <p>
             På den här sidan kommer vi gå igenom lite grunder i CSS och vad man kan göra.
-            Det är ett språk som ändrar utseende på en webbsida skriven i ett markup språk t.ex HTML. Nedan kan du lära dig hur man ändrar
-            färg, byter placering på något, ändrar form på ett objekt etc. 
+            Det är ett språk som ändrar utseende på en webbsida skriven i ett markup språk t.ex HTML. Nedan kan du lära
+            dig hur man ändrar
+            färg, byter placering på något, ändrar form på ett objekt etc.
 
         </p>
 
-        <div class="animation"></div>
-        <div class="animation2"></div>
 
         <section class="subject">
             <div class="explanation">
@@ -54,7 +53,7 @@
 
             </div>
             <div id="backgroundColor" class="result">
-                 <button id="red">Tryck för röd bakgrund</button>
+                <button id="red">Tryck för röd bakgrund</button>
                 <button id="green">Tryck för grön bakgrund</button>
                 <button id="blue">Tryck för blå bakgrund</button>
             </div>
@@ -78,7 +77,43 @@
                 <button id="center">Mitten</button>
             </div>
             <br class="clear-fix">
-        </section> 
+        </section>
+
+        <section class="subject">
+            <div class="explanation">
+                <h2>Animering</h2>
+                <p>Med attributet @keyframes kan man animera i CSS.</p>
+
+            </div>
+            <hr>
+            <div class="code">
+                .animation {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background: #0171bf;
+                position: relative;
+                -webkit-animation: mymove 5s infinite;
+                animation: mymove 5s infinite;
+                }
+                @keyframes mymove {
+                from {
+                left: 0px;
+                }
+                to {
+                left: 500px;
+                }
+                }
+
+
+            </div>
+            <div id="" class="result">
+                <div class="animation"></div>
+
+
+            </div>
+            <br class="clear-fix">
+        </section>
 
     </div>
     <footer>
