@@ -212,6 +212,9 @@ canvas {
   .main-content {
     padding: 0;
   }
+  canvas {
+    width: 100%;
+  }
 
   .video{
       width: 300px;

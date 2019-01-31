@@ -140,43 +140,56 @@
             <div class="explanation">
                 <h2>Gruppera figurer med hjälp av objekt</h2>
                 <p>
-                    När man vill måla upp en figur flera gånger - t.ex när man animerar eller gör spel - så är det smidigt att gruppera figurer med objekt. Detta gör att man t.ex kan ange ett x-, och y-värde till objektet för att måla upp en figur på de koordinaterna. 
+                    När man vill måla upp en figur flera gånger - t.ex när man animerar eller gör spel - så är det smidigt att gruppera figurer med objekt. Detta gör att man t.ex kan ange ett x-, och y-värde till objektet för att måla upp en figur på de koordinaterna. Såhär kan det se ut:
                 </p>
             </div>
             <hr>
             <div class="code">
-   let rectcanvas = document.getElementById('rectcanvas');
-   let ctx = rectcanvas.getContext('2d');
-   let xstart = 20, ystart = 20, xsize = 20, ysize = 60;
-   ctx.fillStyle = 'orange';
-   ctx.fillRect(xstart, ystart, xsize, ysize);
-   //ctx.fillRect(20, 100, 20, 20);
+ctx = document.getElementById('dudecanvas').getContext('2d');
+
+function Dude(x, y){
+    this.x = x;
+    this.y = y;
+    this.width = 20;
+    this.height = 60;
+    this.draw = function(){
+        ctx.fillStyle = 'pink';
+        ctx.beginPath();
+        ctx.arc(this.x+this.width/2, this.y+this.height/8, this.height/8, 0, 2*Math.PI);
+        ctx.fill();
+        ctx.fillRect(this.x, this.y+this.height/4, this.width, this.height/2);
+        ctx.fillRect(this.x-this.width/4-1, this.y+this.height/4, this.width/4, this.height/3);
+        ctx.fillRect(this.x+this.width+1, this.y+this.height/4, this.width/4, this.height/3);
+        ctx.fillRect(this.x, this.y+this.height/4*3, this.width/3, this.height/4);
+        ctx.fillRect(this.x+this.width/3*2, this.y+this.height/4*3, this.width/3, this.height/4);
+    }
+}
+let dude = new Dude(20,20);
+for(let i=0;i&lt;5;i++){
+    dude.draw();
+    dude.x += 40;
+    dude.y += 20;
+}
             </div>
             <div class="result">
-                <canvas id="rectcanvas"></canvas>
+                <canvas id="dudecanvas"></canvas>
             </div>
             <hr class="clearfix">
             <div class="explanation">
                 <p>
-                    Observera att det här kodexemplet förutsätter att det finns ett canvaselement med id: 'rectcanvas' i html-filen.
+                    I koden skapas objektet 'dude' en gång och sedan anropas dess metod 'draw' 5 gånger.
                 </p>
                 <p>
-                    Det är en bra idé att göra den här biten i vs code så att man ser att den funkar. Testa att byta värden på xstart, ystart, xsize och ysize och kolla vad som händer. Testa även att byta färg (det går bra att använda hexkoder också).
+                    Man kan ge objekt massa olika egenskaper för att måla på olika sätt som t.ex hastighet i x- och y-led, rotationsvinkel på arnmar och ben, färg och mycket mer. Testa gärna att lägga till en egenskap 'color' för att ändra färg på gubbarna.
                 </p>
-                <p>
-                    Testa att avkommentera den sista raden i exemplet. Det går att göra flera rektanglar på samma canvas.
-                </p>
-                <p>
-                    Kolla på koden och fundera på om du kan göra tre rektanglar: en gul, en röd och en orange?
-                </p>
-                <p id='1' class='bonus'>
+                <p id='3' class='bonus'>
                     Tryck här för bonus level!
                 </p>
-                <div id='challenge1' class='challenge'>
+                <div id='challenge3' class='challenge'>
                     <p>
-                        Försök bygga den här snubben:
+                        Ge objektet i exemplet ett värde för gender för att måla ut figurerna i bilden. En if-sats i drawmetoden är ett tips:p
                     </p> 
-                    <canvas id='face' width="100" height="100"></canvas>
+                    <canvas id='gender' width="100" height="100"></canvas>
                 </div>
             </div>
 
