@@ -77,6 +77,25 @@ ctx.beginPath();
 ctx.arc(80,60,5,0,2*Math.PI);
 ctx.stroke();
 
+function Gubbe(x, y){
+    this.x = x;
+    this.y = y;
+    this.width = 20;
+    this.height = 60;
+    this.draw = function(){
+        ctx.fillStyle = 'pink';
+        ctx.beginPath();
+        ctx.arc(this.x+this.width/2, this.y+this.height/8, this.height/8, 0, 2*Math.PI);
+        ctx.fill();
+        ctx.fillRect(this.x, this.y+this.height/4, this.width, this.height/2);
+        ctx.fillRect(this.x, this.y+this.height/4*3, this.width/3, this.height/4);
+        ctx.fillRect(this.x+this.width/3*2, this.y+this.height/4*3, this.width/3, this.height/4);
+        console.log(this.height);
+    }
+}
+let gubbe = new Gubbe(20,20);
+gubbe.draw();
+
 function revealBonus(){
     let data = this.id;
     let challenge = document.getElementById('challenge' + data);
