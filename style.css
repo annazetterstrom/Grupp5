@@ -214,6 +214,11 @@ li{
 canvas {
   background-color: #fff;
 }
+@media (max-width:800px){
+  .main-content {
+    padding: 0;
+  }
+}
 
 /* tengils kod slutar */
 
