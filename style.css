@@ -20,46 +20,24 @@ p, li{
   text-align: left;
 }
 .animation {
-  /* byt klassnamn pls */
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: #0171bf; 
   position: relative;
   -webkit-animation: mymove 5s infinite;
-  /* Safari 4.0 - 8.0 */
   animation: mymove 5s infinite;
 }
-.animation2 {
-  /* byt klassnamn pls */
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #0171bf; 
-  position: relative;
-  -webkit-animation: mymove2 5s infinite;
-  /* Safari 4.0 - 8.0 */
-  animation: mymove2 5s infinite;
-}
-/* Standard syntax */
+
 @keyframes mymove {
   from {
-    left: 100px;
+    left: 0px;
   }
-
   to {
-    left: 800px;
+    left: 500px;
   }
 }
-@keyframes mymove2 {
-  from {
-    left: 800px;
-  }
 
-  to {
-    left: 100px;
-  }
-}
 
 
 #backgroundColor{
