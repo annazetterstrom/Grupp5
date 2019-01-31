@@ -158,11 +158,12 @@ li{
 
 .video-text {
     font-family:Arial, Helvetica, sans-serif;
-    margin: auto;
-    width: 800px;
+    margin: auto 50px auto 50px;
+    width: auto;
     padding: 30px 0 30px;
     font-size: 16px;
 }
+
 /*ELLINOR Slut*/
 
 /* tengils kod börjar */
@@ -212,6 +213,11 @@ li{
 }
 canvas {
   background-color: #fff;
+}
+@media (max-width:800px){
+  .main-content {
+    padding: 0;
+  }
 }
 
 /* tengils kod slutar */
