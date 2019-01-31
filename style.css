@@ -2,6 +2,10 @@
   box-sizing: border-box;
   margin: 0px;
 }
+p, li{
+    font-family: 'Old Standard TT', serif;
+    font-size: 18px;
+}
 
 .img {
   display: block;
