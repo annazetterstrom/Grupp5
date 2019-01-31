@@ -48,16 +48,16 @@
   }
 }
 #backgroundColor{
-  height: 220px;
+  height: 218px;
 }
 #red{
-  background-color: red;
+  background-color: white;
 }
 #green{
-  background-color: green;
+  background-color: white;
 }
 #blue{
-  background-color: blue; 
+  background-color: white; 
 }
 /*ANNA Slut*/
 
@@ -222,14 +222,19 @@ canvas {
   clear: both;
 }
 
-.kod-förklaring{
+.padding{
+  padding-top:16px;
   text-align: center;
-  margin: 60px;
 }
-.code-pic{
-  width: 300px; 
-  
- 
-}
+
+
+
+
+
+
+
+
+
+
 
 /*FRIDA sluta*/
