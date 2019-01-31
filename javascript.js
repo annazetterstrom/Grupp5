@@ -77,24 +77,50 @@ ctx.beginPath();
 ctx.arc(80,60,5,0,2*Math.PI);
 ctx.stroke();
 
-function Gubbe(x, y){
+ctx = document.getElementById('dudecanvas').getContext('2d');
+
+function Dude(x, y, boy){
     this.x = x;
     this.y = y;
     this.width = 20;
     this.height = 60;
+    this.boy = boy;
     this.draw = function(){
         ctx.fillStyle = 'pink';
         ctx.beginPath();
         ctx.arc(this.x+this.width/2, this.y+this.height/8, this.height/8, 0, 2*Math.PI);
         ctx.fill();
         ctx.fillRect(this.x, this.y+this.height/4, this.width, this.height/2);
-        ctx.fillRect(this.x, this.y+this.height/4*3, this.width/3, this.height/4);
-        ctx.fillRect(this.x+this.width/3*2, this.y+this.height/4*3, this.width/3, this.height/4);
-        console.log(this.height);
+        ctx.fillRect(this.x-this.width/4-1, this.y+this.height/4, this.width/4, this.height/3);
+        ctx.fillRect(this.x+this.width+1, this.y+this.height/4, this.width/4, this.height/3);
+        if(this.boy){
+            ctx.fillRect(this.x, this.y+this.height/4*3, this.width/3, this.height/4);
+            ctx.fillRect(this.x+this.width/3*2, this.y+this.height/4*3, this.width/3, this.height/4);
+        } else {
+            ctx.beginPath();
+            ctx.moveTo(this.x, this.y+this.height/4*3);
+            ctx.lineTo(this.x-this.width/3,this.y+this.height);
+            ctx.lineTo(this.x+this.width/3*4,this.y+this.height);
+            ctx.lineTo(this.x+this.width, this.y+this.height/4*3);
+            ctx.lineTo(this.x, this.y+this.height/4*3);
+            ctx.fill();
+            
+        }
     }
 }
-let gubbe = new Gubbe(20,20);
-gubbe.draw();
+let dude = new Dude(20,20,true);
+for(let i=0;i<5;i++){
+    dude.draw();
+    dude.x += 40;
+    dude.y += 20;
+}
+
+let gender = document.getElementById('gender');
+ctx = gender.getContext('2d');
+let girl = new Dude(20,20,false);
+girl.draw();
+let boy = new Dude(60,20,true);
+boy.draw();
 
 function revealBonus(){
     let data = this.id;
