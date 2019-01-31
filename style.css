@@ -192,11 +192,6 @@ li{
   margin-bottom: 40px;
   margin-top: 40px;
 }
-@media (max-width:800px){
-  .main-content {
-    padding: 0;
-  }
-}
 .subject h2,
 .subject p {
   margin-top: 10px;
