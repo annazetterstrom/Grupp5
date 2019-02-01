@@ -36,16 +36,16 @@
             vänster och höger om elementet. HTML taggar markerar och definerar innehållet så att t.ex. rubriker och
             texter skall synas i webbläsarens fönster, utan att elementens taggar syns. </p>
 
-        <section class="subject">
+        <section class="subject">   <!--Här börjar exempel 1-->
             <div class="explanation">
-                <h2>Exempel 1</h2>
+                <h2>Exempel 1 - Rubriker</h2>
                 <p>
                     Rubriker i olika storlekar som man kan använda sig av i HTML.
                 </p>
             </div>
             <hr>
-            <div class="code">
-                <p class="padding">
+            <div class="code padding">
+                <p>
                     &lt;h1&gt;Detta är en h1 rubrik &lt;/h1 &gt;
 
                     &lt;h2&gt;Detta är en h2 rubrik &lt;/h2 &gt;
@@ -80,25 +80,22 @@
 
 
             <br class="clearfix">
-        </section>
+        </section> <!--Här slutar exempel 1-->
 
-        <section class="subject">
+        <section class="subject"> <!--Här börjar exempel 2-->
             <div class="explanation">
-                <h2>Exempel 1</h2>
+                <h2>Exempel 2 -Textformatering och fysiska element</h2>
                 <p>Här kommer vi visa olika exempel på vad man kan skriva i ett HTML dokument.
                 </p>
             </div>
             <hr>
-            <div class="code">
+            <div class="code padding">
 
-                &lt;b&gt;Detta en fet text&lt;/b&gt;
-                &lt;i&gt;Detta är kursiv text&lt;/i&gt;
-                &lt;small&gt;Detta är lite mindre text &lt;/small&gt;
-                &lt;u&gt;Detta är understruken text&lt;/u&gt;
+                här visas koden
 
             </div>
 
-            <div class="result">
+            <div class="result padding">
                 <p><b>Detta är en fet text</b></p>
                 <p><i>Detta är kursiv text</i></p>
                 <p><small>Detta är lite mindre text</small></p>
@@ -106,6 +103,14 @@
                 <p><s>Lite genomstruken text</s></p>
                 <p>Detta är <em>en betoning</em> med kursiv text</p>
                 <p>Detta är <strong>en betoning</strong> med fet text </p>
+                <p><mark>Detta markerar en text</mark> och kan också <mark>markera</mark> ett ord </p>
+                <p>
+                    <blockquote>"Här kan du skriva ett vacker citat om något eller någon."</blockquote>
+                </p>
+                <p><q>Du kan också skriva ett citat på detta vis</q></p>
+                <p>Text med upphöjt i som t.ex. Area: 15m<sup>2</sup> </p>
+                <p>Text med nedsänkt i som t.ex. Vatten: H<sub>2</sub>0</p>
+
 
             </div>
 
@@ -113,7 +118,177 @@
 
             <br class="clearfix">
 
-        </section>
+        </section>  <!--Här slutar exempel 2-->
+
+        <section class="subject">  <!--Här börjar exempel 3-->
+            <div class="explanation">
+                <h2>Exempel 3 - Listor,punktlistor och ordnade listor(UL)</h2>
+            </div>
+            <hr>
+            <div class="code padding">
+                Här visas koden
+            </div>
+
+            <div class="result padding">
+                <h4>Här visas en oordnad lista i punkform</h4>
+                <ul>
+                    <li>Här visas</li>
+                    <li>en oordnad</li>
+                    <li>list</li>
+                </ul>
+
+                <hr>
+                <br>
+
+                <h4>Här visas en numrerad lista</h4>
+                <ol>
+                    <li>Rita mockup</li>
+                    <li>Designa hemsidan med HTML, CSS och JS</li>
+                    <li>Redovisa resultatet</li>
+                </ol>
+
+                <br>
+
+                <h4>Om du vill hoppa nummerordning i en numrerad lista och t.ex. börja på nummer 10</h4>
+                <ol start="10">
+                    <li>Lär dig agila arbetsmetoder</li>
+                    <li>Lär dig Github</li>
+                </ol>
+
+                <br>
+
+                <h4>En lista i omvänd siffer ordning</h4>
+                <ol reversed='reversed'>
+                    <li>Lär dig HTML</li>
+                    <li>Lär dig CSS</li>
+                    <li>Lär dig JS</li>
+                </ol>
+
+                <hr>
+                <br>
+
+                <h3>Ändra typ av lista till:</h3>
+                <br>
+                <h4>Små bokstäver</h4>
+                <ol type="a">
+                    <li>Lär dig HTML</li>
+                    <li>Lär dig CSS</li>
+                    <li>Lär dig JS</li>
+                </ol>
+
+                <br>
+
+                <h4>Stora bokstäver</h4>
+                <ol type="A">
+                    <li>Lär dig Agila arbetsmetoder</li>
+                    <li>Lär dig Github </li>
+                    <li>Lär dig Trello</li>
+                 </ol>
+
+                <br>
+
+                <h4>Romerska siffror</h4>
+                <ol type="I">
+                    <li>Lär dig pusha upp till github</li>
+                    <li>Lär dig att commita</li>
+                    <li>Lär dig merga ihop arbeten</li>
+                </ol>
+
+                <br>
+
+                <h4>Stora siffror</h4>
+                <ol type="1">
+                    <li>Lär dig ha tålamod</li>
+                    <li>Lär dig att skratta</li>
+                    <li>Lär dig att ha roligt påvägen</li>
+                </ol>
+
+                <hr>
+                <br>
+
+                <h4>En punktlista i fyrkantig form</h4>
+                <ul type='square'>
+                    <li>Få kravspecifikation</li>
+                    <li>Rita en mockup</li>
+                    <li>Dela upp arbetet</li>
+                    <li>Ha scrum möten</li>
+                    <li>Avsluta sprint</li>
+                </ul>
+
+            </div>
+
+            <br class="clearfix">
+        </section> <!--Här slutar exempel 2-->
+
+        <section class="subject"> <!--Här börjar exempel 4-->
+            <div class="explanation">
+                <h2>Exempel 4</h2>
+                <p>
+                    skriv här
+                </p>
+            </div>
+            <hr>
+            <div class="code padding">
+                skriv här
+            </div>
+
+            <div class="result padding">
+
+
+                skriv här
+            </div>
+
+
+
+            <br class="clearfix">
+        </section> <!--Här slutar exempel 4-->
+
+        <section class="subject"> <!--Här börjar exempel 5-->
+            <div class="explanation">
+                <h2>Exempel 5</h2>
+                <p>
+                    skriv här
+                </p>
+            </div>
+            <hr>
+            <div class="code padding">
+                skriv här
+            </div>
+
+            <div class="result padding">
+
+
+                skriv här
+            </div>
+
+
+
+            <br class="clearfix">
+        </section> <!--Här slutar exempel 5-->
+
+        <section class="subject"> <!--Här börjar exempel 6-->
+            <div class="explanation">
+                <h2>Exempel 6</h2>
+                <p>
+                    skriv här
+                </p>
+            </div>
+            <hr>
+            <div class="code padding">
+                skriv här
+            </div>
+
+            <div class="result padding">
+
+
+                skriv här
+            </div>
+
+
+
+            <br class="clearfix">
+        </section> <!--Här slutar exempel 6-->
+
     </div>
     <footer>
         <p>Copyright &copy; 2019 &bull; Frida, Ellinor, Anna, Niklas</p>
