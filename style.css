@@ -163,22 +163,24 @@ li{
 /* tengils kod börjar */
 .code,
 .result {
-  width: 49%;
-  display: inline-block;
   text-align: left;
   background-color: #fff;
+}
+.col {
+  display: table-cell;
+  width: 50%;
+}
+.col-container {
+  display: table;
+  width: 100%;
+  border-spacing: 5px;
 }
 .explanation {
   text-align: left;
 }
-.result {
-  float: right;
- 
-}
 .code{
     white-space: pre-wrap;
     overflow: hidden;
-
 }
 .subject {
   padding: 5px;
@@ -192,7 +194,7 @@ li{
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#bonus:hover {
+.bonus:hover {
   color: #fff;
   background-color: #000;
 }
@@ -212,6 +214,12 @@ canvas {
   .main-content {
     padding: 0;
   }
+  
+.col {
+  display: block;
+  margin: 5px 0;
+  width: 100%;
+}
   canvas {
     width: 100%;
   }

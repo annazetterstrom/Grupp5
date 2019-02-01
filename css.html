@@ -24,7 +24,7 @@
     <div class="main-content">
         <img class="img" src="./Images/css.png" alt="css">
 
-        <h1 class="anna">CSS - Tutorial</h1>
+        <h1 class="anna">CSS - Tutorial</h1> <!-- -.-' -->
         <h2>Cascading Stylee Sheet</h2>
 <hr>
         <p>
@@ -43,19 +43,20 @@
 
             </div>
             <hr>
-            <div class="code">
-                <p>
-                    div{
-                    background-color: <span id="codeColor"></span>
-                    }
+            <div class="col-container">
+                <div class="code col">
+                    <p>
+                        div{
+                            background-color: <span id="codeColor">white</span>;
+                        }
+                    </p>
 
-                </p>
-
-            </div>
-            <div id="backgroundColor" class="result">
-                <button id="red">Tryck för röd bakgrund</button>
-                <button id="green">Tryck för grön bakgrund</button>
-                <button id="blue">Tryck för blå bakgrund</button>
+                </div>
+                <div id="backgroundColor" class="result col">
+                    <button id="red">Tryck för röd bakgrund</button>
+                    <button id="green">Tryck för grön bakgrund</button>
+                    <button id="blue">Tryck för blå bakgrund</button>
+                </div>
             </div>
             <br class="clear-fix">
         </section>
@@ -66,15 +67,17 @@
 
             </div>
             <hr>
-            <div class="code">
+            <div class="col-container">
+                <div class="code col">
 
 
 
-            </div>
-            <div id="" class="result">
-                <button id="left">Vänster</button>
-                <button id="right">Höger</button>
-                <button id="center">Mitten</button>
+                </div>
+                <div id="" class="result col">
+                    <button id="left">Vänster</button>
+                    <button id="right">Höger</button>
+                    <button id="center">Mitten</button>
+                </div>
             </div>
             <br class="clear-fix">
         </section>
@@ -86,31 +89,33 @@
 
             </div>
             <hr>
-            <div class="code">
-                .animation {
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                background: #0171bf;
-                position: relative;
-                -webkit-animation: mymove 5s infinite;
-                animation: mymove 5s infinite;
-                }
-                @keyframes mymove {
-                from {
-                left: 0px;
-                }
-                to {
-                left: 500px;
-                }
-                }
+            <div class="col-container">
+                <div class="code col">
+                    .animation {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    background: #0171bf;
+                    position: relative;
+                    -webkit-animation: mymove 5s infinite;
+                    animation: mymove 5s infinite;
+                    }
+                    @keyframes mymove {
+                    from {
+                    left: 0px;
+                    }
+                    to {
+                    left: 500px;
+                    }
+                    }
 
 
-            </div>
-            <div id="" class="result">
-                <div class="animation"></div>
+                </div>
+                <div id="" class="result col">
+                    <div class="animation"></div>
 
 
+                </div>
             </div>
             <br class="clear-fix">
         </section>
