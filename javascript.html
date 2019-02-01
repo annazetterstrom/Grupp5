@@ -62,16 +62,18 @@
                 </p>
             </div>
             <hr>
-            <div class="code">
+            <div class="col-container">
+                <div class="code col">
    let rectcanvas = document.getElementById('rectcanvas');
    let ctx = rectcanvas.getContext('2d');
    let xstart = 20, ystart = 20, xsize = 20, ysize = 60;
    ctx.fillStyle = 'orange';
    ctx.fillRect(xstart, ystart, xsize, ysize);
    //ctx.fillRect(20, 100, 20, 20);
-            </div>
-            <div class="result">
-                <canvas id="rectcanvas"></canvas>
+                </div>
+                <div class="result col">
+                    <canvas id="rectcanvas"></canvas>
+                </div>
             </div>
             <hr class="clearfix">
             <div class="explanation">
@@ -109,7 +111,8 @@
                 </p>
             </div>
             <hr>
-            <div class="code">
+            <div class="col-container">
+                <div class="code col">
    //fyrkant
    let circleCanvas = document.getElementById('circleCanvas');
    ctx = circleCanvas.getContext('2d');
@@ -127,9 +130,10 @@
    ctx.lineTo(90,30);
    ctx.fillStyle = 'orange';
    ctx.fill();
-            </div>
-            <div class="result">
-                <canvas id="circleCanvas"></canvas>
+                </div>
+                <div class="result col">
+                    <canvas id="circleCanvas"></canvas>
+                </div>
             </div>
             <hr class="clearfix">
             <div class="explanation">
@@ -160,7 +164,8 @@
                 </p>
             </div>
             <hr>
-            <div class="code">
+            <div class="col-container">
+                <div class="code col">
 ctx = document.getElementById('dudecanvas').getContext('2d');
 
 function Dude(x, y){
@@ -186,9 +191,10 @@ for(let i=0;i&lt;5;i++){
     dude.x += 40;
     dude.y += 20;
 }
-            </div>
-            <div class="result">
-                <canvas id="dudecanvas"></canvas>
+                </div>
+                <div class="result col">
+                    <canvas id="dudecanvas"></canvas>
+                </div>
             </div>
             <hr class="clearfix">
             <div class="explanation">
