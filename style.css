@@ -221,6 +221,9 @@ canvas {
   }
   
 }
+.border {
+  border: #000 1px solid;
+}
 
 /* tengils kod slutar */
 
