@@ -146,9 +146,9 @@ video {
 .jnav a:hover {
   color: #f7df1e;
 }
-li{
+/*li{
     list-style-type: disc;
-}
+} */
 
 .video-text {
     font-family:Arial, Helvetica, sans-serif;
@@ -248,6 +248,7 @@ h1,h2,h3,h4{
 .padding,li,ul,ol > *{
   padding-top:16px;
   text-align: center;
+  list-style-position: inside;
 }
 
 
