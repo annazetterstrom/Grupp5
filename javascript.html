@@ -14,7 +14,8 @@
 
 <body>
     <h1 class="FTJ">Frontend Tutorials</h1>
-    <input type="checkbox" id="burgerbutton"> <label class="burgermenu" for="burgerbutton">hej</label>
+    <input type="checkbox" id="burgerbutton"> <label class="burgermenu" for="burgerbutton">&#9776;
+    </label>
     <nav class="jnav" id="burgermenu">
         <a href="./index.html">Hem</a> &bull;
         <a href="./adobex.html">Adobe Xd</a> &bull;
@@ -64,7 +65,7 @@
             <hr>
             <div class="col-container">
                 <div class="code col">
-   let rectcanvas = document.getElementById('rectcanvas');
+   let rectcanvas = document.getElementById('myCanvas');
    let ctx = rectcanvas.getContext('2d');
    let xstart = 20, ystart = 20, xsize = 20, ysize = 60;
    ctx.fillStyle = 'orange';
@@ -115,7 +116,7 @@
             <div class="col-container">
                 <div class="code col">
    //fyrkant
-   let circleCanvas = document.getElementById('circleCanvas');
+   let circleCanvas = document.getElementById('myCanvas');
    ctx = circleCanvas.getContext('2d');
    ctx.beginPath();
    ctx.moveTo(20,10);
@@ -168,7 +169,7 @@
             <hr>
             <div class="col-container">
                 <div class="code col">
-ctx = document.getElementById('dudecanvas').getContext('2d');
+ctx = document.getElementById('myCanvas').getContext('2d');
 
 function Dude(x, y){
     this.x = x;
@@ -230,7 +231,7 @@ for(let i=0;i&lt;5;i++){
             <hr>
             <div class="col-container">
                 <div class="code col">
-ctx = document.getElementById('animationcanvas').getContext('2d');
+ctx = document.getElementById('myCanvas').getContext('2d');
 
 function Boll(x, y, xv, yv, r, color){
     this.x = x;
