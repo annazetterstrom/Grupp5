@@ -205,17 +205,91 @@ for(let i=0;i&lt;5;i++){
                     I koden skapas objektet 'dude' en gång och sedan anropas dess metod 'draw' 5 gånger.
                 </p>
                 <p>
-                    Man kan ge objekt massa olika egenskaper för att måla på olika sätt som t.ex hastighet i x- och y-led, rotationsvinkel på arnmar och ben, färg och mycket mer. Testa gärna att lägga till en egenskap 'color' för att ändra färg på gubbarna.
+                    Man kan ge objekt massa olika egenskaper för att måla på olika sätt som t.ex hastighet i x- och y-led, rotationsvinkel på armar och ben, färg och mycket mer. Testa gärna att lägga till en egenskap 'color' för att ändra färg på gubbarna.
                 </p>
                 <p id='3' class='bonus'>
                     Tryck här för bonus level!
                 </p>
                 <div id='challenge3' class='challenge'>
                     <p>
-                        Ge objektet i exemplet ett värde för gender för att måla ut figurerna i bilden. En if-sats i drawmetoden är ett tips:p
+                        Ge objektet i exemplet ett värde för gender för att måla ut figurerna i bilden. En if-sats i draw-metoden är ett tips:p
                     </p> 
                     <canvas id='gender' width="100" height="100"></canvas>
                 </div>
+            </div>
+
+        </section>
+
+        <section class="subject">
+            <div class="explanation">
+                <h2>Uppdatera bilder med hjälp av requestAnimationFrame</h2>
+                <p>
+                    I det här exemplet ska vi få en boll att studsa upp och ned. För att uppnå detta skapar vi ett litet objekt: boll. Objektet kommer som i tidigare exempel ha en draw-metod. Vi kommer loopa den metoden samtidigt som vi uppdaterar bollens position för att få det att se ut som att bollen rör sig över canvasen.
+                </p>
+            </div>
+            <hr>
+            <div class="col-container">
+                <div class="code col">
+ctx = document.getElementById('animationcanvas').getContext('2d');
+
+function Boll(x, y, xv, yv, r, color){
+    this.x = x;
+    this.y = y;
+    this.xv = xv;
+    this.yv = yv;
+    this.r = r;
+    this.color = color;
+    this.move = function(){
+        this.x += this.xv;
+        this.y += this.yv;
+        if (this.y>=150-this.r){
+            this.y = 150-this.r;
+            this.yv = this.yv*(-1); //studsfaktor
+        } else {
+            this.yv += .1; //gravitationsfaktor
+        }
+        if (this.x>300-this.r){
+            this.x = 300-this.r;
+            this.xv*=(-1);
+        }
+        if (this.x&lt;this.r){
+            this.x = this.r;
+            this.xv*=(-1);
+        }
+    }
+    this.draw = function(){
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.r, 0, 2*Math.PI);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+    }
+}
+let boll = new Boll(20,100,1,0,5,'blue');
+animate();
+
+function animate(){
+    ctx.clearRect(0,0,300,200);
+    boll.draw();
+    boll.move();
+    requestAnimationFrame(animate);
+}
+                </div>
+                <div class="result col">
+                    <p>Resultat:</p>
+                    <canvas id="animationcanvas"></canvas>
+                </div>
+            </div>
+            <hr class="clearfix">
+            <div class="explanation">
+                <p>
+                    Objektet boll har två metoder: move och draw. move uppdaterar bollens position och draw målar bollen på canvasen. Det intressanta i det här exemplet är dock requestAnimationFrame och clearRect.
+                </p>
+                <p>
+                    requestAnimationFrame tar en funktion - i det här fallet animate - som argument och kör funktionens innehåll 60 gånger per sekund. Den har ungefär samma användning som setIntervall men visar inte nästa frame förrän all kod är körd.
+                </p>
+                <p>
+                    clearRect suddar ut en yta ur canvasen. Testa gärna att kommentera bort raden med clearRect för att se varför detta är nödvändigt.
+                </p>
             </div>
 
         </section>
