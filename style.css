@@ -5,7 +5,7 @@
 
 p,
 li {
-  font-family: 'Old Standard TT', serif;
+  font-family: "Old Standard TT", serif;
   font-size: 18px;
 }
 
@@ -42,8 +42,6 @@ li {
   }
 }
 
-
-
 #backgroundColor {
   height: 218px;
 }
@@ -77,11 +75,11 @@ li {
 }
 
 .font-times {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .font-courier {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .font-arial {
@@ -151,7 +149,7 @@ nav, label.burgermenu {
   display: block;
 }
 
-nav>a {
+nav > a {
   text-align: center;
   padding: 12px 30px 12px 30px;
   text-decoration: none;
@@ -209,13 +207,9 @@ video {
   color: #f7df1e;
 }
 
-
-
-.xd-tutorial>ul>li{
-    list-style-type: disc;
+.xd-tutorial > ul > li {
+  list-style-type: disc;
 }
-
-
 
 .video-text {
   font-family: Arial, Helvetica, sans-serif;
@@ -233,8 +227,7 @@ video {
   text-align: center;
 }
 
-
-.xd-tutorial>ul>li {
+.xd-tutorial > ul > li {
   text-align: left;
   padding-right: 40px;
 }
@@ -249,8 +242,21 @@ video {
   width: 600px;
   height: auto;
 }
+.xd-tutorial > ul > li {
+  text-align: left;
+  padding-right: 40px;
+}
 
+.pipett {
+  width: 20px;
+  height: auto;
+  margin: 0px;
+}
 
+.prototyp {
+  width: 600px;
+  height: auto;
+}
 
 /*ELLINOR Slut*/
 
@@ -346,7 +352,14 @@ canvas {
   .video {
     width: 300px;
   }
-
+  .prototyp {
+    /*width: 300px;
+    height: auto;*/
+    display: none;
+  }
+  img {
+    margin: 10px;
+  }
 }
 
 /* burgerstuff */
@@ -362,22 +375,12 @@ canvas {
   }
 }
 
-img {
-  margin: 10px;
-}
-
-.prototyp {
-  /*width: 300px;
-    height: auto;*/
-  display: none;
-}
-
-.xd-tutorial>ul>li {
+.xd-tutorial > ul > li {
   text-align: left;
   list-style-position: initial;
 }
-img{
-    margin: 10px;
+img {
+  margin: 10px;
 }
 
 
@@ -399,25 +402,10 @@ h4 {
 .padding,
 li,
 ul,
-ol>* {
+ol > * {
   padding-top: 16px;
   text-align: center;
   list-style-position: inside;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*FRIDA sluta*/
