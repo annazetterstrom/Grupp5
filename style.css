@@ -52,6 +52,30 @@ p, li{
 #blue{
   background-color: white; 
 }
+
+.border-red{
+  border: solid 2px red; 
+}
+.border-dotted{
+  border: dotted 2px black; 
+}
+.border-bottom{
+  border-bottom: solid 2px black; 
+}
+.border-thick{
+  border: solid 10px black; 
+}
+
+.font-times{
+  font-family: 'Times New Roman', Times, serif; 
+}
+.font-courier{
+  font-family: 'Courier New', Courier, monospace;
+}
+.font-arial{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /*ANNA Slut*/
 
 /*ELLINOR Start*/
