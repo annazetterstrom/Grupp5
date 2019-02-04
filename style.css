@@ -172,9 +172,11 @@ video {
 .jnav a:hover {
   color: #f7df1e;
 }
-/*li{
+.xd-tutorial>ul>li{
     list-style-type: disc;
-} */
+}
+
+
 
 .video-text {
     font-family:Arial, Helvetica, sans-serif;
@@ -193,6 +195,17 @@ video {
 .xd-tutorial>ul>li{
     text-align: left;
     padding-right: 40px;
+}
+
+.pipett{
+    width: 20px;
+    height: auto;
+    margin: 0px;
+}
+
+.prototyp{
+    width: 600px;
+    height: auto;
 }
 
 
@@ -275,16 +288,17 @@ img{
     margin: 10px;
 }
 
-.pipett{
-    width: 20px;
-    height: auto;
-    margin: 0px;
+.prototyp{
+    /*width: 300px;
+    height: auto;*/
+    display: none;
 }
 
-.prototyp{
-    width: 600px;
-    height: auto;
+.xd-tutorial>ul>li{
+    text-align: left;
+    list-style-position: initial;
 }
+
 
 /* tengils kod slutar */
 
