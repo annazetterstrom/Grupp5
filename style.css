@@ -208,9 +208,11 @@ video {
   color: #f7df1e;
 }
 
-.xd-tutorial>ul>li {
-  list-style-type: disc;
-}
+
+
+.xd-tutorial>ul>li{
+    list-style-type: disc;
+
 
 
 
@@ -230,6 +232,7 @@ video {
   text-align: center;
 }
 
+
 .xd-tutorial>ul>li {
   text-align: left;
   padding-right: 40px;
@@ -244,6 +247,22 @@ video {
 .prototyp {
   width: 600px;
   height: auto;
+=======
+.xd-tutorial>ul>li{
+    text-align: left;
+    padding-right: 40px;
+}
+
+.pipett{
+    width: 20px;
+    height: auto;
+    margin: 0px;
+}
+
+.prototyp{
+    width: 600px;
+    height: auto;
+
 }
 
 
@@ -347,6 +366,21 @@ img {
 .xd-tutorial>ul>li {
   text-align: left;
   list-style-position: initial;
+=======
+img{
+    margin: 10px;
+}
+
+.prototyp{
+    /*width: 300px;
+    height: auto;*/
+    display: none;
+}
+
+.xd-tutorial>ul>li{
+    text-align: left;
+    list-style-position: initial;
+
 }
 
 
