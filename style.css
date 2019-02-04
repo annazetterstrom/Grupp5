@@ -158,11 +158,13 @@ video {
   width: fit-content;
   margin: auto;
   text-align: left;
+  margin-bottom: 50px;
 }
 
 .xdnav a:hover {
   color: #eb47bd;
 }
+
 .htmlnav a:hover {
   color: #e44d26;
 }
@@ -173,9 +175,11 @@ video {
 .jnav a:hover {
   color: #f7df1e;
 }
-/*li{
+.xd-tutorial>ul>li{
     list-style-type: disc;
-} */
+}
+
+
 
 .video-text {
     font-family:Arial, Helvetica, sans-serif;
@@ -190,6 +194,23 @@ video {
 .h2-lista{
     text-align: center;
 }
+
+.xd-tutorial>ul>li{
+    text-align: left;
+    padding-right: 40px;
+}
+
+.pipett{
+    width: 20px;
+    height: auto;
+    margin: 0px;
+}
+
+.prototyp{
+    width: 600px;
+    height: auto;
+}
+
 
 /*ELLINOR Slut*/
 
@@ -265,6 +286,22 @@ canvas {
 .border {
   border: #000 1px solid;
 }
+
+img{
+    margin: 10px;
+}
+
+.prototyp{
+    /*width: 300px;
+    height: auto;*/
+    display: none;
+}
+
+.xd-tutorial>ul>li{
+    text-align: left;
+    list-style-position: initial;
+}
+
 
 /* tengils kod slutar */
 
