@@ -155,11 +155,13 @@ video {
   width: fit-content;
   margin: auto;
   text-align: left;
+  margin-bottom: 50px;
 }
 
 .xdnav a:hover {
   color: #eb47bd;
 }
+
 .htmlnav a:hover {
   color: #e44d26;
 }
@@ -187,6 +189,12 @@ video {
 .h2-lista{
     text-align: center;
 }
+
+.xd-tutorial>ul>li{
+    text-align: left;
+    padding-right: 40px;
+}
+
 
 /*ELLINOR Slut*/
 
@@ -261,6 +269,21 @@ canvas {
 }
 .border {
   border: #000 1px solid;
+}
+
+img{
+    margin: 10px;
+}
+
+.pipett{
+    width: 20px;
+    height: auto;
+    margin: 0px;
+}
+
+.prototyp{
+    width: 600px;
+    height: auto;
 }
 
 /* tengils kod slutar */
