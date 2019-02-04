@@ -227,7 +227,7 @@ video {
   text-align: left;
   padding-right: 40px;
   list-style-type: disc;
-  margin-left: 250px;
+  margin-left: 200px;
 }
 
 .pipett {
@@ -243,6 +243,14 @@ video {
 
 .startsida{
     background-image: url(images/code.jpg);
+}
+
+.hem-pic{
+    width: 400px;
+    height: auto;
+    padding: 40px;
+    opacity: 0.80;
+    border: groove;
 }
 
 /*ELLINOR Slut*/
