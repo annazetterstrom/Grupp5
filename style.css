@@ -91,10 +91,11 @@ p, li{
   background-color: #0171bf;
   font-size: 40px;
 }
-nav {
+nav, label.burgermenu {
   text-align: center;
   background-color: rgba(142, 142, 142, 0.438);
   padding: 30px;
+  display: block;
 }
 nav > a {
   text-align: center;
@@ -102,7 +103,9 @@ nav > a {
   text-decoration: none;
   color: #000;
   font-size: 20px;
+  display: block;
 }
+
 nav a:hover {
   color: rgb(190, 42, 42);
 }
@@ -216,6 +219,19 @@ video {
 canvas {
   background-color: #fff;
 }
+
+/* hamburgargrejer */
+#burgerbutton {
+  display: none;
+}
+#burgermenu {
+  display: none;
+}
+#burgerbutton:checked~#burgermenu {
+  display: block;
+}
+
+
 @media (max-width:800px){
   .main-content {
     padding: 0;
@@ -232,6 +248,15 @@ canvas {
 
   .video{
       width: 300px;
+  }
+  nav > a {
+    display: block;
+  }
+  #burgermenu {
+    display: none;
+  }
+  label[for=burgermenu] {
+    display: block;
   }
   
 }
