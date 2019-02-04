@@ -2,9 +2,11 @@
   box-sizing: border-box;
   margin: 0px;
 }
-p, li{
-    font-family: 'Old Standard TT', serif;
-    font-size: 18px;
+
+p,
+li {
+  font-family: 'Old Standard TT', serif;
+  font-size: 18px;
 }
 
 .img {
@@ -19,11 +21,12 @@ p, li{
 .left {
   text-align: left;
 }
+
 .animation {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: #0171bf; 
+  background: #0171bf;
   position: relative;
   -webkit-animation: mymove 5s infinite;
   animation: mymove 5s infinite;
@@ -33,6 +36,7 @@ p, li{
   from {
     left: 0px;
   }
+
   to {
     left: 500px;
   }
@@ -40,21 +44,67 @@ p, li{
 
 
 
-#backgroundColor{
+#backgroundColor {
   height: 218px;
 }
-#red{
+
+#red {
   background-color: white;
 }
-#green{
+
+#green {
   background-color: white;
 }
-#blue{
-  background-color: white; 
+
+#blue {
+  background-color: white;
 }
+
+.border-red {
+  border: solid 2px red;
+}
+
+.border-dotted {
+  border: dotted 2px black;
+}
+
+.border-bottom {
+  border-bottom: solid 2px black;
+}
+
+.border-thick {
+  border: solid 10px black;
+}
+
+.font-times {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.font-courier {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.font-arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-cambria {
+  font-family: Cambria, Cochin, Georgia, Times, serif;
+}
+
 /*ANNA Slut*/
 
 /*ELLINOR Start*/
+.FTHEM {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  padding: 60px;
+  font-family: "Old Standard TT", serif;
+  margin: auto;
+  color: indigo;
+  font-size: 40px;
+}
+
 .FTX {
   text-align: center;
   background-color: rgb(0, 0, 0);
@@ -64,6 +114,7 @@ p, li{
   color: #eb47bd;
   font-size: 40px;
 }
+
 .FTH {
   text-align: center;
   color: #d9d9d9;
@@ -73,6 +124,7 @@ p, li{
   background-color: #e44d26;
   font-size: 40px;
 }
+
 .FTJ {
   text-align: center;
   color: #000000;
@@ -82,6 +134,7 @@ p, li{
   background-color: #f7df1e;
   font-size: 40px;
 }
+
 .FTC {
   text-align: center;
   color: #d9d9d9;
@@ -97,7 +150,8 @@ nav, label.burgermenu {
   padding: 30px;
   display: block;
 }
-nav > a {
+
+nav>a {
   text-align: center;
   padding: 12px 30px 12px 30px;
   text-decoration: none;
@@ -109,6 +163,7 @@ nav > a {
 nav a:hover {
   color: rgb(190, 42, 42);
 }
+
 .active {
   color: rgb(255, 255, 255);
 }
@@ -119,6 +174,7 @@ nav a:hover {
   padding: 35px;
   /*background-image: url(images/code.jpg);*/
 }
+
 footer {
   background-color: rgb(216, 216, 216, 0.27);
   padding: 20px;
@@ -134,11 +190,13 @@ video {
   width: fit-content;
   margin: auto;
   text-align: left;
+  margin-bottom: 50px;
 }
 
 .xdnav a:hover {
   color: #eb47bd;
 }
+
 .htmlnav a:hover {
   color: #e44d26;
 }
@@ -146,26 +204,52 @@ video {
 .cssnav a:hover {
   color: #0171bf;
 }
+
 .jnav a:hover {
   color: #f7df1e;
 }
-/*li{
+
+
+
+.xd-tutorial>ul>li{
     list-style-type: disc;
-} */
+}
+
+
 
 .video-text {
-    font-family:Arial, Helvetica, sans-serif;
-    margin: auto 50px auto 50px;
-    width: auto;
-    padding: 30px 0 30px;
-    font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto 50px auto 50px;
+  width: auto;
+  padding: 30px 0 30px;
+  font-size: 16px;
 }
-.heading-xd{
-    margin: 0 70px 0 70px;
+
+.heading-xd {
+  margin: 0 70px 0 70px;
 }
-.h2-lista{
-    text-align: center;
+
+.h2-lista {
+  text-align: center;
 }
+
+
+.xd-tutorial>ul>li {
+  text-align: left;
+  padding-right: 40px;
+}
+
+.pipett {
+  width: 20px;
+  height: auto;
+  margin: 0px;
+}
+
+.prototyp {
+  width: 600px;
+  height: auto;
+}
+
 
 /*ELLINOR Slut*/
 
@@ -175,22 +259,27 @@ video {
   text-align: left;
   background-color: #fff;
 }
+
 .col {
   display: table-cell;
   width: 50%;
 }
+
 .col-container {
   display: table;
   width: 100%;
   border-spacing: 5px;
 }
+
 .explanation {
   text-align: left;
 }
-.code{
-    white-space: pre-wrap;
-    overflow: hidden;
+
+.code {
+  white-space: pre-wrap;
+  overflow: hidden;
 }
+
 .subject {
   padding: 5px;
   background-color: #eee;
@@ -198,15 +287,18 @@ video {
   margin-bottom: 40px;
   margin-top: 40px;
 }
+
 .subject h2,
 .subject p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .bonus:hover {
   color: #fff;
   background-color: #000;
 }
+
 .bonus {
   width: fit-content;
   padding: 5px;
@@ -216,6 +308,7 @@ video {
 .challenge {
   display: none;
 }
+
 canvas {
   background-color: #fff;
 }
@@ -249,10 +342,10 @@ canvas {
     width: 100%;
   }
 
-  .video{
-      width: 300px;
+  .video {
+    width: 300px;
   }
-  
+
 }
 
 /* burgerstuff */
@@ -268,6 +361,25 @@ canvas {
   }
 }
 
+img {
+  margin: 10px;
+}
+
+.prototyp {
+  /*width: 300px;
+    height: auto;*/
+  display: none;
+}
+
+.xd-tutorial>ul>li {
+  text-align: left;
+  list-style-position: initial;
+}
+img{
+    margin: 10px;
+}
+
+
 /* tengils kod slutar */
 
 /*FRIDA start */
@@ -276,12 +388,18 @@ canvas {
   clear: both;
 }
 
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
   font-family: "Old Standard TT", serif;
 }
 
-.padding,li,ul,ol > *{
-  padding-top:16px;
+.padding,
+li,
+ul,
+ol>* {
+  padding-top: 16px;
   text-align: center;
   list-style-position: inside;
 }
