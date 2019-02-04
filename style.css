@@ -144,11 +144,11 @@ li {
   background-color: #0171bf;
   font-size: 40px;
 }
-
-nav {
+nav, label.burgermenu {
   text-align: center;
   background-color: rgba(142, 142, 142, 0.438);
   padding: 30px;
+  display: block;
 }
 
 nav>a {
@@ -157,6 +157,7 @@ nav>a {
   text-decoration: none;
   color: #000;
   font-size: 20px;
+  display: block;
 }
 
 nav a:hover {
@@ -248,22 +249,7 @@ video {
   width: 600px;
   height: auto;
 }
-.xd-tutorial>ul>li{
-    text-align: left;
-    padding-right: 40px;
-}
 
-.pipett{
-    width: 20px;
-    height: auto;
-    margin: 0px;
-}
-
-.prototyp{
-    width: 600px;
-    height: auto;
-
-}
 
 
 /*ELLINOR Slut*/
@@ -328,17 +314,31 @@ canvas {
   background-color: #fff;
 }
 
-@media (max-width:800px) {
+/* hamburgargrejer */
+#burgerbutton {
+  display: none;
+}
+#burgermenu {
+  display: none;
+}
+#burgerbutton:checked~#burgermenu {
+  display: block;
+}
+
+.border {
+  border: #000 1px solid;
+}
+
+@media (max-width:800px){
   .main-content {
     padding: 0;
   }
-
+  
   .col {
     display: block;
     margin: 5px 0;
     width: 100%;
   }
-
   canvas {
     width: 100%;
   }
@@ -349,8 +349,17 @@ canvas {
 
 }
 
-.border {
-  border: #000 1px solid;
+/* burgerstuff */
+@media (min-width:800px){
+  nav > a {
+    display: inline;
+  }
+  #burgermenu {
+    display: block;
+  }
+  label.burgermenu {
+    display: none;
+  }
 }
 
 img {
@@ -369,18 +378,6 @@ img {
 }
 img{
     margin: 10px;
-}
-
-.prototyp{
-    /*width: 300px;
-    height: auto;*/
-    display: none;
-}
-
-.xd-tutorial>ul>li{
-    text-align: left;
-    list-style-position: initial;
-
 }
 
 
