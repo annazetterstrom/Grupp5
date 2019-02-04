@@ -257,9 +257,9 @@
         <section class="subject">
             <!--Här börjar exempel 4-->
             <div class="explanation">
-                <h2>Exempel 4</h2>
+                <h2>Exempel 4 - HTML formulär</h2>
                 <p>
-                    <!-- skriv här -->
+                    Här visar vi olika sätt du kan skapa formulär i HTML.
                 </p>
             </div>
             <hr>
@@ -269,9 +269,143 @@
                 </div>
 
                 <div class="result padding col">
+                    <h4>Ett standard formulär med två rutor för namn och en knapp för att skicka</h4>
+                    <br>
+                    <form action="backend.php" method="POST">
+                        <p>Förnamn:
+                            <input type="text" name="firstname">
+                        </p>
+                        <br>
+
+                        <p>Efternamn:
+                            <input type="text" name="lastname">
+                        </p>
+                        <br>
 
 
-                    <!-- skriv här -->
+                        <input type="submit" value="Skicka" name="knapp">
+                    </form>
+                    <br>
+                    <hr>
+                    <br>
+
+                    <h4>Ett standard formulär för inloggning</h4>
+
+                    <form action="action_page.php" method="POST">
+                        <p> Användarnamn: <br>
+                            <input type="text" name="username" size="15" maxlength="15">
+
+                        </p>
+                        <p> Lösenord: <br>
+                            <input type="password" name="password" size="15" maxlength="15">
+                        </p>
+
+                        <p>
+                            <input type="submit" value="Logga in">
+                        </p>
+                    </form>
+                    <br>
+                    <hr>
+                    <br>
+
+                    <h4>Textruta där man kan skriva text i och sedan skicka</h4>
+                    <form action="backend" method="post">
+                        <p>Skriv gärna en kommentar här:</p>
+                        <textarea name="comments" id="" cols="30" rows="10"></textarea> <br>
+                        <input type="submit" value="Skicka" name="knapp">
+                    </form>
+                    <br>
+                    <hr>
+                    <br>
+                    <h3>Radioknappar</h3>
+                    <h4>Med radioknappar kan man bara välja ett av alternativen</h4>
+                    <form action="backend" method="post">
+                        <p>
+                            Vilken ögonfärg har du:
+                        </p>
+                        <p>Bruna</p>
+                        <input type="radio" name="genre">
+                        <p>Nötbruna</p>
+                        <input type="radio" name="genre">
+                        <p>Gråa</p>
+                        <input type="radio" name="genre">
+                        <p>Gröna</p>
+                        <input type="radio" name="genre">
+                        <p>Blåa</p>
+                        <input type="radio" name="genre">
+                        <p>Olikfärgade ögon</p>
+                        <input type="radio" name="genre">
+                    </form>
+                    <br>
+                    <hr>
+                    <br>
+                    <h3>Kryssrutor (checkbox)</h3>
+                    <h4>Här kan man kryssa i flera alternativ</h4>
+                    <form action="checkbox" method="POST">
+                        <p>
+                            Kryssa i vilken(vilka) allergier du har:
+                        </p>
+                        <p>Pollenallergi</p>
+                        <input type="checkbox" name="Service" value="pollen">
+                        <p>Pälsallergi</p>
+                        <input type="checkbox" name="Service" value="Päls">
+                        <p>Matallergi</p>
+                        <input type="checkbox" name="Service" value="Mat">
+                        <p>Kontaktallergi (hud)</p>
+                        <input type="checkbox" name="Service" value="Kontakt">
+                    </form>
+                    <br>
+                    <hr>
+                    <br>
+                    <h3>Fieldset</h3>
+                    <h4>Används för att gruppera relaterade element i en form och skapar en box runt de relaterade
+                        elementen.</h4>
+                    <form action="fieldset">
+
+                        <fieldset>
+                            <legend>
+                                <p>Kontakta mig</p>
+                            </legend>
+                            <label>
+                                <p>Förnamn:</p>
+                                <input type="firstname" name="firstname" required>
+                            </label>
+                            <label>
+                                <p>Efternamn:</p>
+                                <input type="lastname" name="lastname" required>
+                            </label>
+                            <br>
+                            <label>
+                                <p>Email:</p>
+                                <input type="email" name="email" required>
+                            </label> <br>
+                            <p><input type="submit"></p>
+                        </fieldset>
+                    </form>
+                    <br>
+                    <h3>Drop-down-lista</h3>
+                    <h4>En lista som du kan trycka på för att få en nedåtgående lista med alternativ att välja i mellan.</h4>
+
+                    <form action="drop-down-list">
+                        <p>Välj den storlek du vill ha:</p>
+
+                        <select name="device">
+                            <option value="choose">Välj Storlek</option>
+                            <option value="x-small">X-Small</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="x-large">X-Large</option>
+                        </select>
+                    </form>
+                    <br>
+                    <hr>
+                    <br>
+
+
+
+
+
                 </div>
             </div>
 
