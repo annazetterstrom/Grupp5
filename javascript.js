@@ -122,6 +122,51 @@ girl.draw();
 let boy = new Dude(60,20,true);
 boy.draw();
 
+ctx = document.getElementById('animationcanvas').getContext('2d');
+
+function Boll(x, y, xv, yv, r, color){
+    this.x = x;
+    this.y = y;
+    this.xv = xv;
+    this.yv = yv;
+    this.r = r;
+    this.color = color;
+    this.move = function(){
+        this.x += this.xv;
+        this.y += this.yv;
+        if (this.y>=150-this.r){
+            this.y = 150-this.r;
+            this.yv = this.yv*(-1); //studsfaktor
+        } else {
+            this.yv += .1; //gravitationsfaktor
+        }
+        if (this.x>300-this.r){
+            this.x = 300-this.r;
+            this.xv*=(-1);
+        }
+        if (this.x<this.r){
+            this.x = this.r;
+            this.xv*=(-1);
+        }
+    }
+    this.draw = function(){
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.r, 0, 2*Math.PI);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+    }
+}
+let boll = new Boll(20,100,1,0,5,'blue');
+animate();
+
+function animate(){
+    ctx.clearRect(0,0,300,200);
+    boll.draw();
+    boll.move();
+    requestAnimationFrame(animate);
+}
+
+
 function revealBonus(){
     let data = this.id;
     let challenge = document.getElementById('challenge' + data);
