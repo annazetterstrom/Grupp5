@@ -231,17 +231,20 @@ canvas {
   display: block;
 }
 
+.border {
+  border: #000 1px solid;
+}
 
 @media (max-width:800px){
   .main-content {
     padding: 0;
   }
   
-.col {
-  display: block;
-  margin: 5px 0;
-  width: 100%;
-}
+  .col {
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+  }
   canvas {
     width: 100%;
   }
@@ -249,19 +252,20 @@ canvas {
   .video{
       width: 300px;
   }
-  nav > a {
-    display: block;
-  }
-  #burgermenu {
-    display: none;
-  }
-  label[for=burgermenu] {
-    display: block;
-  }
   
 }
-.border {
-  border: #000 1px solid;
+
+/* burgerstuff */
+@media (min-width:800px){
+  nav > a {
+    display: inline;
+  }
+  #burgermenu {
+    display: block;
+  }
+  label.burgermenu {
+    display: none;
+  }
 }
 
 /* tengils kod slutar */
