@@ -212,7 +212,7 @@ video {
 
 .xd-tutorial>ul>li{
     list-style-type: disc;
-
+}
 
 
 
@@ -247,7 +247,7 @@ video {
 .prototyp {
   width: 600px;
   height: auto;
-=======
+}
 .xd-tutorial>ul>li{
     text-align: left;
     padding-right: 40px;
@@ -366,7 +366,7 @@ img {
 .xd-tutorial>ul>li {
   text-align: left;
   list-style-position: initial;
-=======
+}
 img{
     margin: 10px;
 }
