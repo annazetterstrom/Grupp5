@@ -228,6 +228,7 @@ video {
   padding-right: 40px;
   list-style-type: disc;
   margin-left: 200px;
+  list-style-position: initial;
 }
 
 .pipett {
@@ -357,7 +358,6 @@ canvas {
   }
   .xd-tutorial > ul > li {
     text-align: left;
-    list-style-position: initial;
     margin: 0px
   }
 }
