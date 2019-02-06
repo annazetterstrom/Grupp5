@@ -11,8 +11,8 @@ li {
 
 .img {
   display: block;
-  width: 100px;
-  height: auto;
+  width: auto;
+  height: 100px;
   text-align: center;
 }
 
@@ -189,6 +189,10 @@ video {
   margin: auto;
   text-align: left;
   margin-bottom: 50px;
+}
+
+.hnav a:hover{
+  color: indigo;
 }
 
 .xdnav a:hover {
