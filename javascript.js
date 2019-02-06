@@ -159,11 +159,71 @@ function Boll(x, y, xv, yv, r, color){
 let boll = new Boll(20,100,1,0,5,'blue');
 animate();
 
+let cty = document.getElementById('movingstuff').getContext('2d');
+
+function Smiley(x, y, xv, yv, r, color){
+    this.x = x;
+    this.y = y;
+    this.xv = xv;
+    this.yv = yv;
+    this.r = r;
+    this.color = color;
+    this.move = function(){
+        this.x += this.xv;
+        this.y += this.yv;
+        if (this.y>=150-this.r){
+            this.y = 150-this.r;
+            this.yv = this.yv*(-1); //studsfaktor
+        } else {
+            this.yv += .1; //gravitationsfaktor
+        }
+        if (this.x>300-this.r){
+            this.x = 300-this.r;
+            this.xv*=(-1);
+        }
+        if (this.x<this.r){
+            this.x = this.r;
+            this.xv*=(-1);
+        }
+    }
+    this.draw = function(){
+        cty.beginPath();
+        cty.fillStyle = this.color;
+        cty.arc(this.x, this.y, this.r, 0, 2*Math.PI);
+        cty.fill();
+        cty.fillRect(this.x-this.r,this.y+this.r-5,this.r*2,5);
+        cty.fillStyle = 'black';
+        cty.beginPath();
+        cty.arc(this.x-this.r/2, this.y-this.r/2, this.r/2, 0, 2*Math.PI);
+        cty.fill();
+        cty.beginPath();
+        cty.arc(this.x+this.r/2, this.y-this.r/2, this.r/2, 0, 2*Math.PI);
+        cty.fill();
+        cty.beginPath();
+        cty.fillStyle = 'red';
+        cty.arc(this.x,this.y+this.r/4,this.r/2, 0, Math.PI);
+        cty.fill();
+    }
+}
+let smiley = new Smiley(20,100,1,0,20,'green');
+let frogg = new Smiley(60,120,1.5,0,20,'orange');
+animateSmiley();
+
+
 function animate(){
     ctx.clearRect(0,0,300,200);
     boll.draw();
     boll.move();
     requestAnimationFrame(animate);
+}
+
+function animateSmiley(){
+    cty.clearRect(0,0,300,200);
+    smiley.draw();
+    frogg.draw();
+    smiley.move();
+    frogg.move();
+    requestAnimationFrame(animateSmiley);
 }
 
 
