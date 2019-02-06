@@ -292,6 +292,7 @@ video {
 .col {
   display: table-cell;
   width: 50%;
+  background-color: #fff;
 }
 
 .col-container {
