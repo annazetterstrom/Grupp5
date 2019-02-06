@@ -11,8 +11,8 @@ li {
 
 .img {
   display: block;
-  width: 100px;
-  height: auto;
+  width: auto;
+  height: 100px;
   text-align: center;
 }
 
@@ -76,18 +76,22 @@ li {
 
 .font-times {
   font-family: "Times New Roman", Times, serif;
+  font-size: 2.5em;
 }
 
 .font-courier {
   font-family: "Courier New", Courier, monospace;
+  font-size: 2em;
 }
 
 .font-arial {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
 }
 
 .font-cambria {
   font-family: Cambria, Cochin, Georgia, Times, serif;
+  font-size: 1em;
 }
 
 /*ANNA Slut*/
@@ -189,6 +193,10 @@ video {
   margin: auto;
   text-align: left;
   margin-bottom: 50px;
+}
+
+.hnav a:hover{
+  color: indigo;
 }
 
 .xdnav a:hover {
