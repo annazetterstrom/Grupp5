@@ -47,9 +47,9 @@
             <div class="col-container">
                 <div class="code col">
                     <p>
-                        div{
-                        background-color: <span id="codeColor">white</span>;
-                        }
+    div{
+        background-color: <span id="codeColor">white</span>;
+    }
                     </p>
 
                 </div>
@@ -75,18 +75,18 @@
             <div class="col-container">
                 <div class="code col">
                     <p>
-                        .border-red{
-                            border: solid 2px red;
-                        }
-                        .border-dotted{
-                            border: dotted 2px black;
-                        }
-                        .border-bottom{
-                            border-bottom: solid 2px black;
-                        }
-                        .border-thick{
-                            border: solid 10px black;
-                        }
+    .border-red{
+        border: solid 2px red;
+    }
+    .border-dotted{
+        border: dotted 2px black;
+    }
+    .border-bottom{
+        border-bottom: solid 2px black;
+    }
+    .border-thick{
+        border: solid 10px black;
+}   
                     </p>
 
                 </div>
@@ -128,22 +128,22 @@
             <div class="col-container">
                 <div class="code col">
                     <p>
-                        .font-times{
-                            font-family: 'Times New Roman', Times, serif;
-                            font-size: 2.5em;
-                        }
-                        .font-courier{
-                            font-family: 'Courier New', Courier, monospace;
-                            font-size: 2em;
-                        }
-                        .font-arial{
-                            font-family: Arial, Helvetica, sans-serif;
-                            font-size: 1.5em;
-                        }
-                        .font-cambria{
-                            font-family: Cambria, Cochin, Georgia, Times, serif;
-                            font-size: 1em;
-                        }
+    .font-times{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2.5em;
+    }
+    .font-courier{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2em;
+    }
+    .font-arial{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+    }
+    .font-cambria{
+        font-family: Cambria, Cochin, Georgia, Times, serif;
+        font-size: 1em;
+    }
                     </p>
                 </div>
                 <div id="" class="result col">
@@ -174,20 +174,30 @@
         <!--Här börjar exempel 4-->
         <section class="subject">
             <div class="explanation">
-                <h2>Ändra Placering</h2>
-                <p></p>
+                <h2>Ändra Placering || Float</h2>
+                <p>Med egenskapen float kan man ändra position på innehållet på sidan. Nedan ser du hur den ena texten
+                   är vänsterplacerad placerad och andra texten är högerplacerad. </p>
 
             </div>
             <hr>
             <div class="col-container">
                 <div class="code col">
-
-
-
+        .left {
+            float: left;
+        }
+        .right{
+            float: right;
+        }
                 </div>
                 <div class="result col">
-                    
-                   
+                    <p class="left">
+                        Float left
+                    </p>
+
+                    <p class="right">
+                        Float right
+                    </p>
+
                 </div>
             </div>
             <br class="clear-fix">
@@ -196,8 +206,44 @@
         <!--Här slutar exempel 4-->
 
 
+<!--Här börjar exempel 5-->
+<section class="subject">
+        <div class="explanation">
+            <h2>Ändra Form</h2>
+            <p></p>
+
+        </div>
+        <hr>
+        <div class="col-container">
+            <div class="code col">
+    .img-form{
+        border-radius: 50%; 
+    }
+            </div>
+            <div class="result col">
+                <p class="white-text"> hej</p>
+               <div class="left">
+                   <p>
+                       Orginal bild
+                   </p>
+                    <img class="smal-img" src="./Images/flower.jpg" alt="picture"> 
+               </div>
+               <div class="right">
+                   <p>
+                       Ändrard bild
+                   </p>
+                   <img class="img-form smal-img" src="./Images/flower.jpg" alt="picture">
+               </div>
+               
+            </div>
+        </div>
+        <br class="clear-fix">
+    </section>
+
+    <!--Här slutar exempel 5-->
 
 
+<!--Här börjar exempel 6-->
         <section class="subject">
             <div class="explanation">
                 <h2>Animering</h2>
@@ -207,34 +253,32 @@
             <hr>
             <div class="col-container">
                 <div class="code col">
-                    .animation {
-                        width: 100px;
-                        height: 100px;
-                        border-radius: 50%;
-                        background: #0171bf;
-                        position: relative;
-                        -webkit-animation: mymove 5s infinite;
-                        animation: mymove 5s infinite;
-                    }
-                    @keyframes mymove {
-                        from {
-                            left: 0px;
-                    }
-                        to {
-                            left: 500px;
-                    }
-                    }
-
-
+        .animation {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #0171bf;
+            position: relative;
+            -webkit-animation: mymove 5s infinite;
+            animation: mymove 5s infinite;
+        }
+        @keyframes mymove {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 500px;
+            }
+        }
                 </div>
-                <div id="" class="result col">
+                <div class="result col">
                     <div class="animation"></div>
-
-
                 </div>
             </div>
             <br class="clear-fix">
         </section>
+
+         <!--Här slutar exempel 6-->
 
     </div>
     <footer>

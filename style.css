@@ -19,7 +19,22 @@ li {
 /*ANNA start */
 
 .left {
-  text-align: left;
+  float: left;
+}
+.right{
+  float: right; 
+}
+
+.smal-img{
+  width: 200px; 
+  height: auto;
+}
+.white-text{
+  color: white; 
+}
+
+.img-form{
+  border-radius: 50%; 
 }
 
 .animation {
@@ -36,7 +51,6 @@ li {
   from {
     left: 0px;
   }
-
   to {
     left: 500px;
   }
@@ -93,6 +107,7 @@ li {
   font-family: Cambria, Cochin, Georgia, Times, serif;
   font-size: 1em;
 }
+
 
 /*ANNA Slut*/
 
