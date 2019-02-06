@@ -17,10 +17,10 @@
     <input type="checkbox" id="burgerbutton"> <label class="burgermenu" for="burgerbutton">&#9776;</label>
 
     <nav class="htmlnav" id="burgermenu">
-        <a href="./index.html">Hem</a> 
-        <a href="./adobex.html">Adobe Xd</a> 
-        <a class="active" href="./html.html">HTML5</a> 
-        <a href="./css.html">CSS</a> 
+        <a href="./index.html">Hem</a> &bull;
+        <a href="./adobex.html">Adobe Xd</a> &bull;
+        <a class="active" href="./html.html">HTML5</a> &bull;
+        <a href="./css.html">CSS</a> &bull;
         <a href="./javascript.html">Javascript</a>
     </nav>
 
@@ -384,7 +384,8 @@
                     </form>
                     <br>
                     <h3>Drop-down-lista</h3>
-                    <h4>En lista som du kan trycka på för att få en nedåtgående lista med alternativ att välja i mellan.</h4>
+                    <h4>En lista som du kan trycka på för att få en nedåtgående lista med alternativ att välja i
+                        mellan.</h4>
 
                     <form action="drop-down-list">
                         <p>Välj den storlek du vill ha:</p>
@@ -401,11 +402,41 @@
                     <br>
                     <hr>
                     <br>
+                    <h4>Datumfält</h4>
+                    <form action="">
+                        <label for="Departure">
+                            <p>Skriv in ditt personnummer:</p>
+                        </label>
+                        <input type="date" name="Departure" id="DOCTYPE">
+                        <input type="submit" value="skicka">
 
+                    </form>
+                    <br>
+                    <hr>
+                    <br>
+                    <h3>Sökfält</h3>
+                    <p>Två exempel på hur man kan infoga sökfält i html. Den första rutan skriver du och trycker
+                        enter direkt och den andra så har du två knappar brevid där du kan söka och rensa.
+                        Dock finns det ett kryss i rutan om man skulle vilja rensa direkt.
+                    </p>
+                    <form action="searchfield">
+                        <input type="tex"> <br> <br>
+                        <input type="search" name="search" placeholder="Sök...">
+                        <input type="submit" value="Sök">
+                        <input type="reset" value="Rensa">
+                    </form>
+                    <br>
+                    <hr> 
+                    <br>
 
-
-
-
+                    <h4>Ladda upp en fil</h4>
+                    <p>På detta sätt kan du göra det möjligt att ladda upp filer via html </p>
+                    <form action='Upload file'>
+                        <p>Ladda upp filer här:</p>
+                        <input type="file" name="song" id="">
+                        <br> <br>
+                        <input type="submit" value="Ladda upp">
+                    </form>
                 </div>
             </div>
 
