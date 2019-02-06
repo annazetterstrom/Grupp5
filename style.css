@@ -431,3 +431,9 @@ ol > * {
 }
 
 /*FRIDA sluta*/
+
+.padding2>p{
+  padding: 1px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
