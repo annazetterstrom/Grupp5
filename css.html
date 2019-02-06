@@ -14,7 +14,7 @@
 
 <body>
     <h1 class="FTC">Frontend Tutorials</h1>
-    <input type="checkbox" id="burgerbutton"> <label class="burgermenu" for="burgerbutton">hej</label>
+    <input type="checkbox" id="burgerbutton"> <label class="burgermenu" for="burgerbutton">&#9776;</label>
     <nav class="cssnav" id="burgermenu">
         <a href="./index.html">Hem</a> &bull;
         <a href="./adobex.html">Adobe Xd</a> &bull;
@@ -130,15 +130,19 @@
                     <p>
                         .font-times{
                             font-family: 'Times New Roman', Times, serif;
+                            font-size: 2.5em;
                         }
                         .font-courier{
                             font-family: 'Courier New', Courier, monospace;
+                            font-size: 2em;
                         }
                         .font-arial{
                             font-family: Arial, Helvetica, sans-serif;
+                            font-size: 1.5em;
                         }
                         .font-cambria{
                             font-family: Cambria, Cochin, Georgia, Times, serif;
+                            font-size: 1em;
                         }
                     </p>
                 </div>
@@ -181,10 +185,8 @@
 
 
                 </div>
-                <div id="" class="result col">
-                    <button id="left">Vänster</button>
-                    <button id="right">Höger</button>
-                    <button id="center">Mitten</button>
+                <div class="result col">
+                   
                 </div>
             </div>
             <br class="clear-fix">
@@ -205,20 +207,20 @@
             <div class="col-container">
                 <div class="code col">
                     .animation {
-                    width: 100px;
-                    height: 100px;
-                    border-radius: 50%;
-                    background: #0171bf;
-                    position: relative;
-                    -webkit-animation: mymove 5s infinite;
-                    animation: mymove 5s infinite;
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        background: #0171bf;
+                        position: relative;
+                        -webkit-animation: mymove 5s infinite;
+                        animation: mymove 5s infinite;
                     }
                     @keyframes mymove {
-                    from {
-                    left: 0px;
+                        from {
+                            left: 0px;
                     }
-                    to {
-                    left: 500px;
+                        to {
+                            left: 500px;
                     }
                     }
 
