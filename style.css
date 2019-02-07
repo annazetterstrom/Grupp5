@@ -108,6 +108,21 @@ li {
   font-size: 1em;
 }
 
+.form {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 10px auto;
+  text-align: center;
+  display: block;
+}
+
+iframe{
+  width: 600px;
+  height: auto;
+}
 
 /*ANNA Slut*/
 
@@ -388,6 +403,14 @@ canvas {
     text-align: left;
     margin: 0px
   }
+
+  iframe{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+
 }
 
 /* burgerstuff */
@@ -406,6 +429,7 @@ canvas {
 img {
   margin: 10px;
 }
+
 
 
 /* tengils kod slutar */
