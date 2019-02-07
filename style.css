@@ -363,6 +363,10 @@ video {
 canvas {
   background-color: #fff;
 }
+.codefield {
+  width: 100%;
+  border-color: #0ee;
+}
 
 /* hamburgargrejer */
 #burgerbutton {

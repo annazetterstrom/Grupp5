@@ -39,7 +39,8 @@ ctx.strokeStyle = 'green';
 ctx.stroke();
 
 ctx.beginPath();
-ctx.arc(70,30,20,0,Math.PI);
+ctx.arc(70,30,20,0,Math.PI/2);
+ctx.lineTo(70,30);
 ctx.lineTo(90,30);
 ctx.fillStyle = 'orange';
 ctx.fill();
