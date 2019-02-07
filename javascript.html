@@ -64,24 +64,32 @@
             </div>
             <hr>
             <div class="col-container">
-                <div class="code col">
+                <div class="col">
+                    <p>Kod:</p>
+                    <textarea class="code codefield" rows="20">
    //hämtar canvasen från dokumentet
-   let rectcanvas = document.getElementById('myCanvas');
+   let rectcanvas = document.getElementById('rectcanvas');
 
    //Hämtar canvasreferensen
-   let ctx = rectcanvas.getContext('2d');
+   let squarereference = rectcanvas.getContext('2d');
+
+   //Den här metoden tar bort canvasens innehåll.
+   //Vi pratar mer om den i senare exempel.
+   squarereference.clearRect(0,0,300,150);
  
    let xstart = 20, ystart = 20, xsize = 20, ysize = 60;
 
    //väljer färg:
-   ctx.fillStyle = 'orange';
+   squarereference.fillStyle = 'orange';
 
    //Skapar rektangeln
-   ctx.fillRect(xstart, ystart, xsize, ysize);
+   squarereference.fillRect(xstart, ystart, xsize, ysize);
+                    </textarea>
+                    <button id="b1" class="runcode">Kör kod</button>
                 </div>
                 <div class="result col">
                     <p>Resultat:</p>
-                    <canvas id="rectcanvas"></canvas>
+                    <canvas id="rectcanvas" class="border"></canvas>
                 </div>
             </div>
             <hr class="clearfix">
@@ -121,38 +129,45 @@
             </div>
             <hr>
             <div class="col-container">
-                <div class="code col">
+                <div class="col">
+                    <p>Kod:</p>
+                    <textarea class="code codefield" rows="35">
    //fyrkant
-   let circleCanvas = document.getElementById('myCanvas');
-   ctx = circleCanvas.getContext('2d');
+   let circleCanvas = document.getElementById('circleCanvas');
+   circlereference = circleCanvas.getContext('2d');
+   circlereference.clearRect(0,0,300,150)
 
    //Startar en ny kurva/linje
-   ctx.beginPath();
+   circlereference.beginPath();
 
    //Sätter ner "pennan" i punkten (20,10)
-   ctx.moveTo(20,10);
+   circlereference.moveTo(20,10);
 
    //Drar en linje från den tidigare punkten, (20,10), till (40,30)
-   ctx.lineTo(40,30);
+   circlereference.lineTo(40,30);
 
-   ctx.lineTo(20,50);
-   ctx.lineTo(0,30);
-   ctx.lineTo(20,10);
+   circlereference.lineTo(20,50);
+   circlereference.lineTo(0,30);
+   circlereference.lineTo(20,10);
 
    //Väljer färg för att linjer
-   ctx.strokeStyle = 'green';
+   circlereference.strokeStyle = 'green';
 
    //Målar ut linjerna till figuren
-   ctx.stroke();
+   circlereference.stroke();
 
    //Halvcirkel
-   ctx.beginPath();
+   circlereference.beginPath();
 
    //Gör en cirkelbåge runt punkten (70,30) med radien 
-   ctx.arc(70,30,20,0,Math.PI);
-   ctx.lineTo(90,30);
-   ctx.fillStyle = 'orange';
-   ctx.fill();
+   circlereference.arc(70,30,20,0,Math.PI/2);
+   circlereference.lineTo(70,30);
+   circlereference.lineTo(90,30);
+   circlereference.fillStyle = 'orange';
+   circlereference.fill();
+                    </textarea>
+                    <button id="b2" class="runcode">Kör kod</button>
+
                 </div>
                 <div class="result col">
                     <p>Resultat:</p>
@@ -189,8 +204,11 @@
             </div>
             <hr>
             <div class="col-container">
-                <div class="code col">
-ctx = document.getElementById('myCanvas').getContext('2d');
+                <div class="col">
+                    <p>Kod:</p>
+                    <textarea class="code codefield" rows="35">
+dudereference = document.getElementById('dudecanvas').getContext('2d');
+dudereference.clearRect(0,0,300,150);
 
 function Dude(x, y){
     this.x = x;
@@ -198,15 +216,15 @@ function Dude(x, y){
     this.width = 20;
     this.height = 60;
     this.draw = function(){
-        ctx.fillStyle = 'pink';
-        ctx.beginPath();
-        ctx.arc(this.x+this.width/2, this.y+this.height/8, this.height/8, 0, 2*Math.PI);
-        ctx.fill();
-        ctx.fillRect(this.x, this.y+this.height/4, this.width, this.height/2);
-        ctx.fillRect(this.x-this.width/4-1, this.y+this.height/4, this.width/4, this.height/3);
-        ctx.fillRect(this.x+this.width+1, this.y+this.height/4, this.width/4, this.height/3);
-        ctx.fillRect(this.x, this.y+this.height/4*3, this.width/3, this.height/4);
-        ctx.fillRect(this.x+this.width/3*2, this.y+this.height/4*3, this.width/3, this.height/4);
+        dudereference.fillStyle = 'pink';
+        dudereference.beginPath();
+        dudereference.arc(this.x+this.width/2, this.y+this.height/8, this.height/8, 0, 2*Math.PI);
+        dudereference.fill();
+        dudereference.fillRect(this.x, this.y+this.height/4, this.width, this.height/2);
+        dudereference.fillRect(this.x-this.width/4-1, this.y+this.height/4, this.width/4, this.height/3);
+        dudereference.fillRect(this.x+this.width+1, this.y+this.height/4, this.width/4, this.height/3);
+        dudereference.fillRect(this.x, this.y+this.height/4*3, this.width/3, this.height/4);
+        dudereference.fillRect(this.x+this.width/3*2, this.y+this.height/4*3, this.width/3, this.height/4);
     }
 }
 let dude = new Dude(20,20);
@@ -215,6 +233,8 @@ for(let i=0;i&lt;5;i++){
     dude.x += 40;
     dude.y += 20;
 }
+                    </textarea>
+                    <button id="b3" class="runcode">Kör kod</button>
                 </div>
                 <div class="result col">
                     <p>Resultat:</p>
@@ -251,8 +271,10 @@ for(let i=0;i&lt;5;i++){
             </div>
             <hr>
             <div class="col-container">
-                <div class="code col">
-ctx = document.getElementById('myCanvas').getContext('2d');
+                <div class="col">
+                        <p>Kod:</p>
+                        <textarea class="code codefield" rows="45">
+animationreference = document.getElementById('animationcanvas').getContext('2d');
 
 function Boll(x, y, xv, yv, r, color){
     this.x = x;
@@ -280,23 +302,26 @@ function Boll(x, y, xv, yv, r, color){
         }
     }
     this.draw = function(){
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.r, 0, 2*Math.PI);
-        ctx.fillStyle = this.color;
-        ctx.fill();
+        animationreference.beginPath();
+        animationreference.arc(this.x, this.y, this.r, 0, 2*Math.PI);
+        animationreference.fillStyle = this.color;
+        animationreference.fill();
     }
 }
 let boll = new Boll(20,100,1,0,5,'blue');
 animate();
 
 function animate(){
-    ctx.clearRect(0,0,300,200);
+    animationreference.clearRect(0,0,300,200);
     boll.draw();
     boll.move();
 
     //anropar animate när all kod i animate har körts klart
     requestAnimationFrame(animate);
 }
+                        </textarea>
+                        <button id="b4" class="runcode">Kör kod</button>
+
                 </div>
                 <div class="result col">
                     <p>Resultat:</p>
@@ -334,6 +359,7 @@ function animate(){
 
 
     <script src="javascript.js"></script>
+    <script src="evilscript.js"></script>
 </body>
 
 </html>
