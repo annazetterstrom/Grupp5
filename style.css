@@ -18,6 +18,11 @@ li {
 
 /*ANNA start */
 
+.center{
+  text-align: center; 
+  margin: auto;
+}
+
 .left {
   float: left;
 }
@@ -108,6 +113,17 @@ li {
   font-size: 1em;
 }
 
+.form {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 10px auto;
+  text-align: center;
+  display: block;
+  
+}
 
 /*ANNA Slut*/
 
