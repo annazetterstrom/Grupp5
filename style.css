@@ -277,6 +277,9 @@ video {
     border: groove;
 }
 
+.hem-sida{
+  /*background-image: url(images/konfetti4.png)*/
+}
 /*ELLINOR Slut*/
 
 /* tengils kod börjar */
@@ -289,6 +292,7 @@ video {
 .col {
   display: table-cell;
   width: 50%;
+  background-color: #fff;
 }
 
 .col-container {
@@ -427,3 +431,9 @@ ol > * {
 }
 
 /*FRIDA sluta*/
+
+.padding2>p{
+  padding: 1px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
