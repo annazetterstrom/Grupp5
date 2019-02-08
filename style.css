@@ -292,6 +292,7 @@ video {
     border: groove;
 }
 
+
 /*
 .hem-sida{
   background-image: url(images/konfetti4.png)
@@ -480,8 +481,12 @@ ol > * {
 
 /*FRIDA sluta*/
 
-.padding2>p{
+.padding-ex2>p{
   padding: 1px;
   margin-top: 1px;
   margin-bottom: 1px;
+}
+
+.padding-ex1{
+  padding: 20px;
 }
