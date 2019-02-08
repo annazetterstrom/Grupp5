@@ -353,14 +353,18 @@ video {
 }
 
 .bonus:hover {
-  color: #fff;
   background-color: #000;
 }
-
-.bonus {
-  width: fit-content;
-  padding: 5px;
+.runcode:hover {
   background-color: #3d3;
+}
+
+.bonus, .runcode {
+  width: fit-content;
+  padding: 10px;
+  background-color: #1b1;
+  border-radius: 10px;
+  color: #fff;
 }
 
 .challenge {
