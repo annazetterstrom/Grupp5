@@ -60,17 +60,18 @@ li {
   height: 218px;
 }
 
-#red {
+/*id="0"{
   background-color: white;
 }
 
-#green {
+#emerald {
   background-color: white;
 }
 
 #blue {
   background-color: white;
 }
+*/
 
 .border-red {
   border: solid 2px red;
