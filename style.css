@@ -448,6 +448,15 @@ canvas {
     opacity: 0.80;
     border: groove;
 }
+
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 150px;
+  }
+}
 }
 
 /* burgerstuff */
