@@ -276,7 +276,7 @@ video {
 }
 
 .prototyp {
-  width: 600px;
+  width: 700px;
   height: auto;
 }
 
@@ -320,6 +320,7 @@ video {
 
 .explanation {
   text-align: left;
+  color: rgb(0, 0, 0);
 }
 
 .code {
@@ -330,10 +331,12 @@ video {
 
 .subject {
   padding: 5px;
-  background-color: #eee;
-  box-shadow: 2px 2px 20px;
+  /*background-color: rgba(121, 121, 121, 0.473);*/
+  background-image: url(images/bakgrund-grupp5.jpg);
+  border-radius: 1%;
   margin-bottom: 40px;
   margin-top: 40px;
+  
 }
 
 .subject h2,
@@ -359,6 +362,10 @@ video {
 
 canvas {
   background-color: #fff;
+}
+.codefield {
+  width: 100%;
+  border-color: #0ee;
 }
 
 /* hamburgargrejer */
