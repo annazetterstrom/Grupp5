@@ -1,20 +1,22 @@
 
   function displayColor(){
-    btnBackground.style.backgroundColor = this.id; 
-    codeColor.innerText = this.id; 
+    btnBackground.style.backgroundColor = colors[this.id]; 
+    codeColor.innerText = colors[this.id]; 
 }
 
 
 let btnBackground = document.getElementById("backgroundColor"); 
 
-let red = document.getElementById("red"); 
-let green = document.getElementById("green");
-let blue = document.getElementById("blue"); 
+let colors = ["#800000", "#073C04", "#00008B"]
+
+let maroon = document.getElementById("0"); 
+let emerald = document.getElementById("1");
+let blue = document.getElementById("2"); 
 
 let codeColor = document.getElementById("codeColor"); 
 
-red.addEventListener("click", displayColor); 
-green.addEventListener("click", displayColor); 
+maroon.addEventListener("click", displayColor); 
+emerald.addEventListener("click", displayColor); 
 blue.addEventListener("click", displayColor); 
 
 
