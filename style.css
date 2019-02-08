@@ -291,7 +291,9 @@ video {
     opacity: 0.80;
     border: groove;
 }
-
+ html{
+   scroll-behavior: smooth;
+ }
 
 /*
 .hem-sida{
@@ -448,6 +450,9 @@ canvas {
   }
   label.burgermenu {
     display: none;
+  }
+  html{
+    scroll-behavior: smooth;
   }
 }
 
