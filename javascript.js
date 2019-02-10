@@ -1,6 +1,9 @@
 let rectcanvas = document.getElementById('rectcanvas');
 let ctx = rectcanvas.getContext('2d');
 let xstart = 20, ystart = 20, xsize = 20, ysize = 60;
+document.getElementById('b4').addEventListener('click', stopAnimating);
+let next = true; //säger om animeringen ska fortsätta i canvas 4
+
 ctx.fillStyle = 'orange';
 ctx.fillRect(xstart, ystart, xsize, ysize);
 //ctx.fillRect(20, 100, 20, 20);
@@ -214,7 +217,9 @@ function animate(){
     ctx.clearRect(0,0,300,200);
     boll.draw();
     boll.move();
-    requestAnimationFrame(animate);
+    if(next){
+        requestAnimationFrame(animate);
+    }
 }
 
 function animateSmiley(){
@@ -236,4 +241,8 @@ function revealBonus(){
     } else {
         challenge.style.display = 'block';
     }
+}
+
+function stopAnimating(){
+    next = false;
 }

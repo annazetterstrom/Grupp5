@@ -309,6 +309,11 @@ video {
 /*ELLINOR Slut*/
 
 /* tengils kod börjar */
+
+.faces {
+  display: none;
+}
+
 .code,
 .result {
   text-align: left;
