@@ -184,7 +184,7 @@ iframe{
   padding: 60px;
   font-family: "Old Standard TT", serif;
   margin: auto;
-  background-color: #0171bf;
+  background-image: linear-gradient(-90deg, #fff, #0171bf, #fff);
   font-size: 40px;
 }
 nav, label.burgermenu {
