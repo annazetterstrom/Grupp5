@@ -89,6 +89,6 @@ function checkLink(e){
         return;
     }
     if(Math.pow((smilies[0].x-x),2)+Math.pow((smilies[0].y-y),2)<Math.pow(smilies[0].r,2)){
-        open("https://www.facebook.com/photo.php?fbid=10156443499603298&set=ecnf.614063297&type=3&theater");
+        open("https://www.w3schools.com/");
     }
 }
