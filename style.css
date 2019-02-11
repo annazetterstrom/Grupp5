@@ -439,6 +439,7 @@ canvas {
   }
   img {
     margin: 10px;
+    z-index: 10;
   }
   .xd-tutorial > ul > li {
     text-align: left;
