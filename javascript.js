@@ -3,6 +3,7 @@ let ctx = rectcanvas.getContext('2d');
 let xstart = 20, ystart = 20, xsize = 20, ysize = 60;
 document.getElementById('b4').addEventListener('click', stopAnimating);
 let next = true; //säger om animeringen ska fortsätta i canvas 4
+let bellsound = document.getElementById('bellsound');
 
 ctx.fillStyle = 'orange';
 ctx.fillRect(xstart, ystart, xsize, ysize);
@@ -240,6 +241,7 @@ function revealBonus(){
         challenge.style.display = 'none';
     } else {
         challenge.style.display = 'block';
+        bellsound.play();
     }
 }
 
