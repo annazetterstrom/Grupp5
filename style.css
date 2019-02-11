@@ -164,7 +164,7 @@ iframe{
   padding: 60px;
   font-family: "Old Standard TT", serif;
   margin: auto;
-  background-color: #e44d26;
+  background-image: linear-gradient(-90deg, #fff, #e44d26, #fff);
   font-size: 40px;
 }
 
