@@ -1,6 +1,9 @@
 let canvas = document.getElementById('movingstuff')
 let cty = canvas.getContext('2d');
 let anna = document.getElementById('anna');
+let frida = document.getElementById('frida');
+let ellinor = document.getElementById('ellinor');
+let niklas = document.getElementById('niklas');
 
 canvas.addEventListener('click', checkLink);
 
@@ -53,7 +56,7 @@ function Smiley(x, y, xv, yv, r, color, picture){
         }
     }
 }
-let smilies = [new Smiley(150,60,0,0,40,'lightcoral',''), new Smiley(20,110,1,0,20,'cadetblue',''), new Smiley(70,100,1,0,20,'burlywood',anna), new Smiley(200,105,1,0,20,'burlywood',''), new Smiley(250,100,1,0,20,'cadetblue','')];
+let smilies = [new Smiley(150,60,0,0,40,'lightcoral',''), new Smiley(20,110,1,0,20,'cadetblue',frida), new Smiley(70,100,1,0,20,'burlywood',anna), new Smiley(200,105,1,0,20,'burlywood',ellinor), new Smiley(250,100,1,0,20,'cadetblue', niklas)];
 animateSmiley();
 
 function animateSmiley(){
