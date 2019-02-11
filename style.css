@@ -51,6 +51,10 @@ li {
   animation: mymove 5s infinite;
 }
 
+.animationcontainer {
+  min-height: 550px;
+}
+
 @keyframes mymove {
   from {
     top: 0px;
