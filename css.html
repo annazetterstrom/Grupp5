@@ -34,8 +34,38 @@
             Det är ett språk som ändrar utseende på en webbsida skriven i ett markup språk t.ex HTML. Nedan kan du lära
             dig hur man ändrar
             färg, byter placering på något, ändrar form på ett objekt etc.
+            Man kan skriva CSS på tre olika sätt inline, external, internal. Nedan kan du se hur de olika sätten skrivs.
+
 
         </p>
+        <br>
+        <div> <!--  bör ha någon css, vet inte vad riktigt... -->
+            <p>
+                Vad din html-fil bör innehålla:
+            </p>
+            <div class="code border">
+   &lt;!DOCTYPE html&gt;
+   &lt;html lang="en"&gt;
+   &lt;head&gt;
+      &lt;meta charset="UTF-8"&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+      &lt;title&gt;Document&lt;/title&gt;
+     <span class="link-style">&lt;link rel="stylesheet" href="style.css"&gt;</span>  // Detta är External stylesheet
+<span class="link-style">
+    &lt;style&gt; 
+    Här emellan kan man skriva CSS kod. Detta är internal CSS
+    &lt;style&gt; 
+</span>
+   &lt;/head&gt;
+   &lt;body&gt;
+ <span class="link-style">&lt;h1 style:"color:blue;"&gt; &lt;h1&gt; </span>  // Detta är inline CSS
+   &lt;/body&gt;
+   &lt;/html&gt;
+            </div>
+        
+
+        </div>
         <!--Här börjar exempel 1-->
         <section class="subject">
             <div class="explanation">
@@ -216,7 +246,7 @@
         <section class="subject">
             <div class="explanation">
                 <h2>Ändra Form</h2>
-                <p>Med egenskapen <i>border-radius</i> kan man ändra form på en bild t.ex. Om man klickar på bilden nedan så skiftar den mellan att vara rektangulär och oval</p>
+                <p>Med egenskapen <i>border-radius</i> kan man ändra form på en bild t.ex.</p>
 
             </div>
             <hr>
@@ -229,7 +259,7 @@
                     </p>
                 </div>
                 <div class="result col">
-                    <p class="white-text"> hej</p><!-- lol -->
+                    <p>Tryck på bilden för att ändra form</p>
                     <img class="smal-img" src="./Images/flower.jpg" id="radiusimage" alt="picture">
 
                 </div>
@@ -244,7 +274,8 @@
         <section class="subject">
             <div class="explanation">
                 <h2>Animering</h2>
-                <p>Med attributet <i>@keyframes</i> kan man animera i CSS. </p>
+                <p>Med attributet <i>@keyframes</i> kan man animera i CSS. <i>@media</i> används för att göra sin webbsida responsiv. 
+                Nedan använder vi <i>@media</i> för att animationen ska anpassa sig för en mindre enhet. </p>
 
             </div>
             <hr>
