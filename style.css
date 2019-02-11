@@ -352,7 +352,6 @@ video {
 
 .code {
   white-space: pre-wrap;
-  overflow: hidden;
   word-wrap: break-word;
 }
 
