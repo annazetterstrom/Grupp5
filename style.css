@@ -314,11 +314,12 @@ video {
    scroll-behavior: smooth;
  }
 
-/*
-.hem-sida{
-  background-image: url(images/konfetti4.png)
-}
-*/
+ footer>p>a{
+   text-decoration: none;
+   color: black;
+ }
+
+
 /*ELLINOR Slut*/
 
 /* tengils kod börjar */
