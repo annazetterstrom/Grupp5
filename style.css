@@ -45,8 +45,7 @@ li {
 .animation {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
-  background: #0171bf;
+  border-radius: 100%;
   position: relative;
   -webkit-animation: mymove 5s infinite;
   animation: mymove 5s infinite;
@@ -54,10 +53,16 @@ li {
 
 @keyframes mymove {
   from {
-    left: 0px;
+    top: 0px;
+    background: #0171bf;
+    width: 100px;
+    height: 100px;
   }
   to {
-    left: 500px;
+    top: 300px;
+    background: #d44;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -179,7 +184,7 @@ iframe{
   padding: 60px;
   font-family: "Old Standard TT", serif;
   margin: auto;
-  background-color: #0171bf;
+  background-image: linear-gradient(-90deg, #fff, #0171bf, #fff);
   font-size: 40px;
 }
 nav, label.burgermenu {
@@ -309,6 +314,11 @@ video {
 /*ELLINOR Slut*/
 
 /* tengils kod börjar */
+
+.faces {
+  display: none;
+}
+
 .code,
 .result {
   text-align: left;
@@ -447,17 +457,9 @@ canvas {
     padding: 20px;
     opacity: 0.80;
     border: groove;
+  }
 }
 
-@keyframes mymove {
-  from {
-    left: 0px;
-  }
-  to {
-    left: 200px;
-  }
-}
-}
 
 
 
@@ -505,7 +507,7 @@ ol > * {
   list-style-position: inside;
 }
 
-/*FRIDA sluta*/
+/*FRIDA slut*/
 
 .padding-ex2>p{
   padding: 1px;
@@ -514,5 +516,9 @@ ol > * {
 }
 
 .padding-ex1{
+  padding: 20px;
+}
+
+.padding-ex1>h4, .padding-ex1>h3{
   padding: 20px;
 }

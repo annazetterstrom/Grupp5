@@ -216,8 +216,7 @@
         <section class="subject">
             <div class="explanation">
                 <h2>Ändra Form</h2>
-                <p>Med egenskapen <i>border-radius</i> kan man ändra form på en bild t.ex. Nedan har vi en fyrkantig bild som
-                    vi har gjort oval med border-radius.</p>
+                <p>Med egenskapen <i>border-radius</i> kan man ändra form på en bild t.ex. Om man klickar på bilden nedan så skiftar den mellan att vara rektangulär och oval</p>
 
             </div>
             <hr>
@@ -225,24 +224,13 @@
                 <div class="code col">
                     <p>
     .img-form{
-        border-radius: 50%;
+        border-radius: <span id="radiusspan">0</span>%;
     }
                     </p>
                 </div>
                 <div class="result col">
-                    <p class="white-text"> hej</p>
-                    <div class="left">
-                        <p>
-                            Orginal bild
-                        </p>
-                        <img class="smal-img" src="./Images/flower.jpg" alt="picture">
-                    </div>
-                    <div class="right">
-                        <p>
-                            Ändrad bild
-                        </p>
-                        <img class="img-form smal-img" src="./Images/flower.jpg" alt="picture">
-                    </div>
+                    <p class="white-text"> hej</p><!-- lol -->
+                    <img class="smal-img" src="./Images/flower.jpg" id="radiusimage" alt="picture">
 
                 </div>
             </div>
@@ -263,8 +251,7 @@
             <hr>
             <div class="col-container">
                 <div class="code col">
-        <p>   
-    // För desktop        
+        <p>      
     .animation {
         width: 100px;
         height: 100px;
@@ -276,20 +263,12 @@
     }
     @keyframes mymove {
         from {
-            left: 0px;
+          top: 0px;
+          background: #0171bf;
         }
         to {
-            left: 500px;
-        }
-    }
-    // För mindre enheter som t.ex mobiler.
-    @media (max-width:800px){
-    @keyframes mymove {
-        from {
-          left: 0px;
-        }
-        to {
-          left: 200px;
+          top: 400px;
+          background: #d44;
         }
       }
         </p>
