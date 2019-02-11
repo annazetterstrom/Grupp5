@@ -36,7 +36,7 @@
             grundstenarna för att kunna bygga en webbsida i HTML. Dom karaktiseras genom taggar (&lt;&gt;) som skrivs
             till
             vänster och höger om elementet. HTML taggar markerar och definerar innehållet så att t.ex. rubriker och
-            texter skall synas i webbläsarens fönster, utan att elementens taggar syns. </p>
+            texter skall synas i webbläsarens fönster, utan att elementens taggar syns. </p> <br>
 
         <div class="code border">
             <h3>HTML grundstruktur </h3>
@@ -242,14 +242,6 @@
                     <p>&lt;/ol&gt;</p>
                     <p>&lt;hr&gt;</p>
 
-                    <p><b>En punktlista i fyrkantig form</b></p>
-                    <p>&lt;ul type='square'&gt; </p>
-                    <p>&lt;li&gt;Få kravspecifikation&lt;li&gt;</p>
-                    <p>&lt;li&gt;Rita en mockup&lt;li&gt;</p>
-                    <p>&lt;li&gt;Dela upp arbetet&lt;li&gt;</p>
-                    <p>&lt;li&gt;Ha scrum möten&lt;li&gt;</p>
-                    <p>&lt;li&gt;Avsluta sprint&lt;li&gt;</p>
-                    <p>&lt;/ul&gt;</p>
 
                     <p><b>Nästlade listor, där en lista kan innehålla ytterligare en lista</b></p>
                     <p>&lt;ul&gt;</p>
@@ -345,24 +337,15 @@
                     <hr>
                     <br>
 
-                    <h4>En punktlista i fyrkantig form</h4>
-                    <ul type='square'>
-                        <li>Få kravspecifikation</li>
-                        <li>Rita en mockup</li>
-                        <li>Dela upp arbetet</li>
-                        <li>Ha scrum möten</li>
-                        <li>Avsluta sprint</li>
-                    </ul>
-
                     <h4>Nästlade listor, där en lista kan innehålla ytterligare en lista</h4>
                     <ul>
                         <li>Kaffe</li>
                         <li>Te</li>
-                        <ul>
+                        <ol>
                             <li>Svart te</li>
                             <li>Grönt te</li>
                             <li>Rött te</li>
-                        </ul>
+                        </ol>
                         <li>Caffe-latte</li>
                         <li>Cappuccino</li>
                     </ul>
@@ -660,16 +643,16 @@
                             </legend>
                             <label>
                                 <p>Förnamn:</p>
-                                <input type="firstname" name="firstname" required>
+                                <input type="firstname" name="firstname">
                             </label>
                             <label>
                                 <p>Efternamn:</p>
-                                <input type="lastname" name="lastname" required>
+                                <input type="lastname" name="lastname">
                             </label>
                             <br>
                             <label>
                                 <p>Email:</p>
-                                <input type="email" name="email" required>
+                                <input type="email" name="email">
                             </label> <br>
                             <p><input type="submit"></p>
                         </fieldset>
