@@ -1,10 +1,15 @@
 let buttons = document.getElementsByClassName('runcode');
 let textfields = document.getElementsByClassName('codefield');
+let currentid = '';
 for(let i=0;i<buttons.length;i++){
     buttons[i].addEventListener('click', evaluate);
 }
 
 function evaluate(){
     let subjectnumber = this.id.substring(1) - 1;
+    if(currentid!=''){
+        animationreference.clearRect(0,0,300,200);
+        cancelAnimationFrame(currentid);
+    }
     eval(textfields[subjectnumber].value);
 }
