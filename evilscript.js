@@ -1,6 +1,6 @@
 let buttons = document.getElementsByClassName('runcode');
 let textfields = document.getElementsByClassName('codefield');
-let runcodesound = document.getElementsByClassName('runcodesound');
+let runcodesound = document.getElementById('runcodesound');
 let currentid = '';
 for(let i=0;i<buttons.length;i++){
     buttons[i].addEventListener('click', evaluate);
