@@ -62,7 +62,13 @@
                     För att måla i canvaselementet med JS kan man anropa metoden getContext('2d'). Den returnerar ett js-object (canvasreferensen) som bland annat låter användaren måla olika geometriska figurer. Det här kodexemplet visar hur man använder canvasreferensen för att måla en kvadrat i en canvas.
                 </p>
                 <p>
-                    Det går ändra i koden till vänster.
+                    <b>Det går ändra i koden nere till vänster.</b>
+                </p>
+                <p>
+                    Testa att avkommentera de sista raderna i exemplet. Det går att göra flera rektanglar på samma canvas.
+                </p>
+                <p>
+                    Kolla på koden och fundera på om du kan göra tre rektanglar: en gul, en röd och en orange?
                 </p>
             </div>
             <hr>
@@ -87,6 +93,10 @@
 
    //Skapar rektangeln
    squarereference.fillRect(xstart, ystart, xsize, ysize);
+
+   //squarereference.fillStyle = 'red';
+   //squarereference.fillRect(100, 50, 50, 50);
+
                     </textarea>
                     <button id="b1" class="runcode">Kör kod</button>
                 </div>
@@ -102,12 +112,6 @@
                 </p>
                 <p>
                     Det är en bra idé att göra den här biten i vs code så att man ser att den funkar. Testa att byta värden på xstart, ystart, xsize och ysize och kolla vad som händer. Testa även att byta färg (det går bra att använda hexkoder också).
-                </p>
-                <p>
-                    Testa att avkommentera den sista raden i exemplet. Det går att göra flera rektanglar på samma canvas.
-                </p>
-                <p>
-                    Kolla på koden och fundera på om du kan göra tre rektanglar: en gul, en röd och en orange?
                 </p>
                 <button id='1' class='bonus'>
                     Tryck här för bonus level!
