@@ -319,6 +319,11 @@ video {
    color: black;
  }
 
+ footer>p>a:hover{
+  text-decoration: none;
+  color: #6B5B95;
+}
+
 
 /*ELLINOR Slut*/
 
