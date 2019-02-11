@@ -1,5 +1,6 @@
 let buttons = document.getElementsByClassName('runcode');
 let textfields = document.getElementsByClassName('codefield');
+let runcodesound = document.getElementsByClassName('runcodesound');
 let currentid = '';
 for(let i=0;i<buttons.length;i++){
     buttons[i].addEventListener('click', evaluate);
@@ -11,5 +12,6 @@ function evaluate(){
         animationreference.clearRect(0,0,300,200);
         cancelAnimationFrame(currentid);
     }
+    runcodesound.play();
     eval(textfields[subjectnumber].value);
 }
