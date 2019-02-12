@@ -317,6 +317,7 @@ video {
  footer>p>a{
    text-decoration: none;
    color: black;
+   font-size: 21px;
  }
 
  footer>p>a:hover{
