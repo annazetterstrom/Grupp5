@@ -73,19 +73,6 @@ li {
   height: 218px;
 }
 
-/*id="0"{
-  background-color: white;
-}
-
-#emerald {
-  background-color: white;
-}
-
-#blue {
-  background-color: white;
-}
-*/
-
 .border-red {
   border: solid 2px red;
 }
@@ -506,6 +493,7 @@ img {
 
 .clearfix {
   clear: both;
+  overflow: auto;
 }
 
 h1,h2,h3,h4,blockquote{
