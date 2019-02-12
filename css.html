@@ -36,12 +36,10 @@
             färg, byter placering på något, ändrar form på ett objekt etc.
             Man kan skriva CSS på tre olika sätt inline, external, internal. 
         </p>
-        <br>
-        <div>
+        <div> <!--  bör ha någon css, vet inte vad riktigt... -->
             <p>
-                Nedan kan du se hur de olika sätten skrivs.
+                Vad din html-fil bör innehålla:
             </p>
-            <br>
             <div class="code border">
    &lt;!DOCTYPE html&gt;
    &lt;html lang="en"&gt;
@@ -50,25 +48,17 @@
       &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
       &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
       &lt;title&gt;Document&lt;/title&gt;
-     <span class="link-style">&lt;link rel="stylesheet" href="style.css"&gt;</span>  // Detta är External stylesheet
-<span class="link-style">
-    &lt;style&gt; 
-    Här emellan kan man skriva CSS kod. 
-    &lt;/style&gt;  
-</span>        // Detta är internal CSS                                                                                                                                                  
-   &lt;/head&gt;
+     <span style="color:blue;"> &lt;link rel="stylesheet" href="style.css"&gt; Detta är external CSS </span> 
+      &lt;/head&gt;
    &lt;body&gt;
- <span class="link-style">&lt;h1 style:"color:blue;"&gt; &lt;/h1&gt; </span>  // Detta är inline CSS
+      <span style="color:blue;">&lt;style &gt; Detta är internal CSS&lt;/style&gt;</span>
+     <span style="color:blue;"> &lt;h1 style="color:blue;" &gt; Detta är inline CSS&lt;/h1&gt; </span> 
    &lt;/body&gt;
    &lt;/html&gt;
             </div>
-            <br>
-            <p>
-                External stylesheet är det rekomenderade sättet att koppla sin CSS till HTML.
-            </p>
+
+            <p>Om du använder den här html-koden så kan du skriva din kod i en annan fil som du sparar som paintoncanvas.js i samma map som html-filen. Du kan även skriva kod direkt i exemplen nedan.</p>
         </div>
-
-
         </div>
 
         <!--Här börjar exempel 1-->
@@ -94,7 +84,7 @@
                     <button class="button" id="2"> <b>Tryck för blå bakgrund</b> </button>
                 </div>
             </div>
-            <br class="clear-fix">
+            <br class="clearfix">
         </section>
         <!--Här slutar exempel 1 -->
 
@@ -146,7 +136,7 @@
                 </div>
 
             </div>
-            <br class="clear-fix">
+            <br class="clearfix">
         </section>
 
         <!--Här slutar exempel 2-->
@@ -203,7 +193,7 @@
 
                 </div>
             </div>
-            <br class="clear-fix">
+            <br class="clearfix">
         </section>
 
         <!-- Här slutar exempel 3-->
@@ -222,7 +212,7 @@
     .left {
         float: left;
     }
-    .right{
+    .right {
        float: right;
     }
 </p>
@@ -236,9 +226,9 @@
                         Float right
                     </p>
 
+                    <br class="clearfix">
                 </div>
             </div>
-            <br class="clear-fix">
         </section>
 
         <!--Här slutar exempel 4-->
@@ -264,9 +254,9 @@
                     <p>Tryck på bilden för att ändra form</p>
                     <img class="smal-img" src="./images/flower.jpg" id="radiusimage" alt="picture">
 
+                    <br class="clearfix">
                 </div>
             </div>
-            <br class="clear-fix">
         </section>
 
         <!--Här slutar exempel 5-->
@@ -311,7 +301,7 @@
                     <div class="animation"></div>
                 </div>
             </div>
-            <br class="clear-fix">
+            <br>
         </section>
 
         <!--Här slutar exempel 6-->
