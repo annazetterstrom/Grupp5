@@ -417,6 +417,7 @@ canvas {
     display: block;
     margin: 5px 0;
     width: 100%;
+    overflow: auto;
   }
   canvas.bonuscanvas {
     width: 100%;
