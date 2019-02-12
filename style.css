@@ -47,7 +47,6 @@ li {
   height: 100px;
   border-radius: 100%;
   position: relative;
-  -webkit-animation: mymove 5s infinite;
   animation: mymove 5s infinite;
 }
 

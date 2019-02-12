@@ -59,13 +59,16 @@
             <div class="explanation">
                 <h2>Hämta canvas-referensen och måla en kvadrat</h2>
                 <p>
-                    För att måla i canvaselementet med JS kan man anropa metoden getContext('2d'). Den returnerar ett js-object (canvasreferensen) som bland annat låter användaren måla olika geometriska figurer. Det här kodexemplet visar hur man använder canvasreferensen för att måla en kvadrat i en canvas.
+                    För att måla i canvaselementet med JS kan man anropa metoden getContext('2d'). 
+                    Den returnerar ett js-object (canvasreferensen) som bland annat låter användaren måla olika geometriska figurer. 
+                    Det här kodexemplet visar hur man använder canvasreferensen för att måla en kvadrat i en canvas.
                 </p>
                 <p>
                     <b>Det går ändra i koden nere till vänster.</b>
                 </p>
                 <p>
-                    Testa att avkommentera (= ta bort snedsträcken före koden) de två sista raderna i exemplet. Det går att göra flera rektanglar på samma canvas.
+                    Testa att avkommentera (= ta bort snedsträcken före koden) de två sista raderna i exemplet. 
+                    Det går att göra flera rektanglar på samma canvas.
                 </p>
                 <p>
                     Kolla på koden och fundera på om du kan göra tre rektanglar: en gul, en röd och en orange?
@@ -111,7 +114,9 @@
                     Observera att det här kodexemplet förutsätter att det finns ett canvaselement med id: 'rectcanvas' i html-filen.
                 </p>
                 <p>
-                    Det är en bra idé att göra den här biten i vs code så att man ser att den funkar. Testa att byta värden på xstart, ystart, xsize och ysize och kolla vad som händer. Testa även att byta färg (det går bra att använda hexkoder också).
+                    Det är en bra idé att göra den här biten i vs code så att man ser att den funkar.
+                    Testa att byta värden på xstart, ystart, xsize och ysize och kolla vad som händer. 
+                    Testa även att byta färg (det går bra att använda hexkoder också).
                 </p>
                 <button id='1' class='bonus'>
                     Tryck här för bonus level!
@@ -131,7 +136,9 @@
             <div class="explanation">
                 <h2>Måla cirklar, cirkelsektioner och linjer</h2>
                 <p>
-                    Det finns flera metoder för att rita linjer och kurvor i canvasreferensen. De metoder som vi kommer använda för att dra linjer i det här exemplet är moveTo, lineTo och arc. För att rita linjer och fylla i figurer kommer vi använda stroke och fill.
+                    Det finns flera metoder för att rita linjer och kurvor i canvasreferensen. 
+                    De metoder som vi kommer använda för att dra linjer i det här exemplet är moveTo, lineTo och arc. 
+                    För att rita linjer och fylla i figurer kommer vi använda stroke och fill.
                 </p>
             </div>
             <hr>
@@ -184,7 +191,11 @@
             <hr class="clearfix">
             <div class="explanation">
                 <p>
-                    Det är en del nya grejer i det här exemplet så vi får bryta ner det. beginPath låter användaren starta en ny linje/kurva. MoveTo sätter ut en punkt som man ritar från. lineTo drar en linje från punkten man befinner sig i till den punkten som anges i lineTo:s argument. Det är alltså en lämplig metod för att måla figurer med raka linjer.
+                    Det är en del nya grejer i det här exemplet så vi får bryta ner det. 
+                    beginPath låter användaren starta en ny linje/kurva. 
+                    MoveTo sätter ut en punkt som man ritar från. 
+                    lineTo drar en linje från punkten man befinner sig i till den punkten som anges i lineTo:s argument. 
+                    Det är alltså en lämplig metod för att måla figurer med raka linjer.
                 </p>
                 <p>
                     Metoden stroke används för att måla upp linjerna till figuren medan fill används för att fylla i figuren med färg. 
@@ -206,7 +217,8 @@
             <div class="explanation">
                 <h2>Gruppera figurer med hjälp av objekt</h2>
                 <p>
-                    När man vill måla upp en figur flera gånger - t.ex när man animerar eller gör spel - så är det smidigt att gruppera figurer med objekt. Detta gör att man t.ex kan ange ett x-, och y-värde till objektet för att måla upp en figur på de koordinaterna. Såhär kan det se ut:
+                    När man vill måla upp en figur flera gånger - t.ex när man animerar eller gör spel - så är det smidigt att gruppera figurer med objekt. 
+                    Detta gör att man t.ex kan ange ett x-, och y-värde till objektet för att måla upp en figur på de koordinaterna. Såhär kan det se ut:
                 </p>
             </div>
             <hr>
@@ -254,7 +266,8 @@ for(let i=0;i&lt;5;i++){
                     I koden skapas objektet 'dude' en gång och sedan anropas dess metod 'draw' 5 gånger.
                 </p>
                 <p>
-                    Man kan ge objekt massa olika egenskaper för att måla på olika sätt som t.ex hastighet i x- och y-led, rotationsvinkel på armar och ben, färg och mycket mer. Testa gärna att lägga till en egenskap 'color' för att ändra färg på gubbarna.
+                    Man kan ge objekt massa olika egenskaper för att måla på olika sätt som t.ex hastighet i x- och y-led, rotationsvinkel på armar och ben, färg och mycket mer. 
+                    Testa gärna att lägga till en egenskap 'color' för att ändra färg på gubbarna.
                 </p>
                 <button id='3' class='bonus'>
                     Tryck här för bonus level!
@@ -273,7 +286,10 @@ for(let i=0;i&lt;5;i++){
             <div class="explanation">
                 <h2>Uppdatera bilder med hjälp av requestAnimationFrame</h2>
                 <p>
-                    I det här exemplet ska vi få en boll att studsa upp och ned. För att uppnå detta skapar vi ett litet objekt: boll. Objektet kommer som i tidigare exempel ha en draw-metod. Vi kommer loopa den metoden samtidigt som vi uppdaterar bollens position för att få det att se ut som att bollen rör sig över canvasen.
+                    I det här exemplet ska vi få en boll att studsa upp och ned. 
+                    För att uppnå detta skapar vi ett litet objekt: boll. 
+                    Objektet kommer som i tidigare exempel ha en draw-metod. 
+                    Vi kommer loopa den metoden samtidigt som vi uppdaterar bollens position för att få det att se ut som att bollen rör sig över canvasen.
                 </p>
             </div>
             <hr>
