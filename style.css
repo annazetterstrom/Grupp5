@@ -197,7 +197,7 @@ iframe{
 }
 nav, label.burgermenu {
   text-align: center;
-  background-color: rgba(142, 142, 142, 0.438);
+ background-color: rgba(142, 142, 142, 0.438);
   padding: 30px;
   display: block;
 }
@@ -521,6 +521,7 @@ ol > * {
   text-align: center;
   list-style-position: inside;
 }
+
 
 /*FRIDA slut*/
 
