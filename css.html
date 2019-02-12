@@ -37,10 +37,11 @@
             Man kan skriva CSS på tre olika sätt inline, external, internal. 
         </p>
         <br>
-        <div> <!--  bör ha någon css, vet inte vad riktigt... -->
+        <div>
             <p>
                 Nedan kan du se hur de olika sätten skrivs.
             </p>
+            <br>
             <div class="code border">
    &lt;!DOCTYPE html&gt;
    &lt;html lang="en"&gt;
@@ -61,18 +62,20 @@
    &lt;/body&gt;
    &lt;/html&gt;
             </div>
+            <br>
             <p>
                 External stylesheet är det rekomenderade sättet att koppla sin CSS till HTML.
             </p>
-        
+        </div>
+
 
         </div>
+
         <!--Här börjar exempel 1-->
         <section class="subject">
             <div class="explanation">
                 <h2>Ändra bakgrundsfärg</h2>
-                <p>Med CSS kan man ändra färger på backgrunden. Testa att trycka på knapparna nedan för att ändra
-                    backgrundsfärgen på rutan nedan.</p>
+                <p>Med CSS kan man ändra färger på backgrunden. Testa att trycka på knapparna nedan för att ändra backgrundsfärgen på rutan nedan.</p>
 
             </div>
             <hr>
@@ -154,8 +157,7 @@
             <div class="explanation">
                 <h2>Ändra Font</h2>
                 <p>Med egenskapen <i>font-family</i> kan man ändra font i CSS. Egenskapen <i>font-size</i> 
-                    ändrar storleken på texten. Man kan använda em eller px (pixlar). Om man skriver t.ex 2em betyder det att den
-                    kommer bli två gånger större än orginaltexten, medans 2px betyder att texten kommer bli två pixlar stor.
+                    ändrar storleken på texten. Man kan bland annat använda em eller px (pixlar). Om man skriver t.ex 2em betyder det att den kommer bli två gånger större än orginaltexten, medans 2px betyder att texten kommer bli två pixlar stor.
                  </p>
 
             </div>
@@ -210,8 +212,7 @@
         <section class="subject">
             <div class="explanation">
                 <h2>Ändra Placering || Float</h2>
-                <p>Med egenskapen <i>float</i> kan man ändra position på innehållet på sidan. Nedan ser du hur den ena texten
-                    är vänsterplacerad placerad och andra texten är högerplacerad. </p>
+                <p>Med egenskapen <i>float</i> kan man ändra position på innehållet på sidan. Nedan ser du hur den ena texten är vänsterplacerad placerad och andra texten är högerplacerad. </p>
 
             </div>
             <hr>
@@ -261,7 +262,7 @@
                 </div>
                 <div class="result col">
                     <p>Tryck på bilden för att ändra form</p>
-                    <img class="smal-img" src="./Images/flower.jpg" id="radiusimage" alt="picture">
+                    <img class="smal-img" src="./images/flower.jpg" id="radiusimage" alt="picture">
 
                 </div>
             </div>
@@ -275,7 +276,8 @@
         <section class="subject">
             <div class="explanation">
                 <h2>Animering</h2>
-                <p>Med attributet <i>@keyframes</i> kan man animera i CSS. 
+                <p>I exemplet nedan har vi gett en div ett animation-attribut. Den tar en @keyframes: "mymove", en tidsperiod "5s" och hur många gånger animationen ska köras "infinite".</p>
+                <p>Med attributet <i>@keyframes</i> kan man animera i CSS. Det fungerar genom att man anger elementets start- och slutegenskaper: t.ex "starta som grön och sluta som blå".</p>
 
             </div>
             <hr>
