@@ -35,25 +35,19 @@ function toggleradius(){
 }
 
 //animation
-//1 Hämta inputfältet med id=ballradius och spara i variabeln ballradius
 let ballradius = document.getElementById('ballradius');
-
-//2 Hämta button med id=animationbutton och spara i variabeln animationbutton
 let animationbutton = document.getElementById('animationbutton');
-
-//3 Hämta diven med id=balldiv och spara i variabeln balldiv
 let balldiv =  document.getElementById('balldiv');
+let animationradius = document.getElementById('animationradius');
 
-//4 Lägg till en eventlistener som lyssnar efter click på animationbutton. Den ska köra funktionen switchWidth
 animationbutton.addEventListener('click',switchWidth);
 
 function switchWidth(){
-  //(För att vi vill ha border-radius mellan 0 och 100%)
   if(ballradius.value>0 && ballradius.value<=100){
-console.log("hello");
-    //5 Plocka ut value från ballradius och spara den i variabeln borderradius.
     let borderradius = ballradius.value;
-    //6 Sätt balldivs borderRadius (balldiv.style...) = borderradius + "%".
     balldiv.style.borderRadius = borderradius + "%";
+    animationradius.innerText = borderradius;
+  } else {
+    alert('Mata in ett tal mellan 1 och 100');
   }
 }

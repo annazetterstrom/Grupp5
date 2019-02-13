@@ -260,7 +260,7 @@
     .animation {
         width: 100px;
         height: 100px;
-        border-radius: 50%;
+        border-radius: <span id="animationradius">100</span>%;
         background: #0171bf;
         position: relative;
         animation: mymove 5s infinite;
@@ -278,7 +278,8 @@
         </p>
                 </div>
                 <div class="result col animationcontainer">
-                    <input type="number" id="ballradius"><button class="button" id="animationbutton">Ändra bredd</button>
+                    <input type="number" id="ballradius">
+                    <button class="button" id="animationbutton">Ändra border-radius</button>
                     <p class="white-text">
                         hej
                     </p>
