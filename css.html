@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
-
 </head>
-
 <body>
     
     <a href="#top"><img class="img" src="./images/css.png" alt="css"></a>
@@ -36,7 +34,8 @@
             färg, byter placering på något, ändrar form på ett objekt etc.
             Man kan skriva CSS på tre olika sätt inline, external, internal. 
         </p>
-        <div> <!--  bör ha någon css, vet inte vad riktigt... -->
+        <div> 
+            <br>
             <p>
                 Vad din html-fil bör innehålla:
             </p>
@@ -48,7 +47,7 @@
       &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
       &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
       &lt;title&gt;Document&lt;/title&gt;
-     <span style="color:blue;"> &lt;link rel="stylesheet" href="style.css"&gt; Detta är external CSS </span> 
+     <span style="color:blue;"> &lt;link rel="stylesheet" href="style.css"&gt; Detta är external stylesheet </span> 
       &lt;/head&gt;
    &lt;body&gt;
       <span style="color:blue;">&lt;style &gt; Detta är internal CSS&lt;/style&gt;</span>
@@ -56,12 +55,14 @@
    &lt;/body&gt;
    &lt;/html&gt;
             </div>
-
-            <p>Om du använder den här html-koden så kan du skriva din kod i en annan fil som du sparar som paintoncanvas.js i samma map som html-filen. Du kan även skriva kod direkt i exemplen nedan.</p>
+<br>
+            <p>
+                Det är rekomenderat att använda external stylesheet. 
+            </p>
         </div>
         </div>
 
-        <!--Här börjar exempel 1-->
+       
         <section class="subject">
             <div class="explanation">
                 <h2>Ändra bakgrundsfärg</h2>
@@ -86,10 +87,6 @@
             </div>
             <br class="clearfix">
         </section>
-        <!--Här slutar exempel 1 -->
-
-
-        <!--Här börjar exempel 2-->
 
         <section class="subject">
             <div class="explanation">
@@ -138,10 +135,6 @@
             </div>
             <br class="clearfix">
         </section>
-
-        <!--Här slutar exempel 2-->
-
-        <!-- Här börjar exempel 3-->
 
         <section class="subject">
             <div class="explanation">
@@ -196,13 +189,11 @@
             <br class="clearfix">
         </section>
 
-        <!-- Här slutar exempel 3-->
-
-        <!--Här börjar exempel 4-->
         <section class="subject">
             <div class="explanation">
                 <h2>Ändra Placering || Float</h2>
-                <p>Med egenskapen <i>float</i> kan man ändra position på innehållet på sidan. Nedan ser du hur den ena texten är vänsterplacerad placerad och andra texten är högerplacerad. </p>
+                <p>Med egenskapen <i>float</i> kan man ändra position på innehållet på sidan.
+                Nedan ser du hur den ena texten är vänsterplacerad  och andra texten är högerplacerad. </p>
 
             </div>
             <hr>
@@ -231,14 +222,10 @@
             </div>
         </section>
 
-        <!--Här slutar exempel 4-->
-
-
-        <!--Här börjar exempel 5-->
         <section class="subject">
             <div class="explanation">
                 <h2>Ändra Form</h2>
-                <p>Med egenskapen <i>border-radius</i> kan man ändra form på en bild t.ex.</p>
+                <p>Med egenskapen <i>border-radius</i> kan man ändra form på t.ex en bild</p>
 
             </div>
             <hr>
@@ -259,10 +246,6 @@
             </div>
         </section>
 
-        <!--Här slutar exempel 5-->
-
-
-        <!--Här börjar exempel 6-->
         <section class="subject">
             <div class="explanation">
                 <h2>Animering</h2>
@@ -295,16 +278,15 @@
         </p>
                 </div>
                 <div class="result col animationcontainer">
+                    <input type="number" id="ballradius"><button id="animationbutton">Ändra bredd</button>
                     <p class="white-text">
                         hej
                     </p>
-                    <div class="animation"></div>
+                    <div class="animation" id="balldiv"></div>
                 </div>
             </div>
             <br>
         </section>
-
-        <!--Här slutar exempel 6-->
 
     </div>
     <footer>
