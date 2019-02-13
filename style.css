@@ -17,29 +17,31 @@ li {
   position: fixed;
 }
 
-/*ANNA start */
-.button{
-  border-radius: 10%; 
+.button {
+  border-radius: 10%;
   font-size: 10px;
   padding: 5px;
 }
+
 .left {
   float: left;
 }
-.right{
-  float: right; 
+
+.right {
+  float: right;
 }
 
-.smal-img{
-  width: 200px; 
+.smal-img {
+  width: 200px;
   height: auto;
 }
-.white-text{
-  color: white; 
+
+.white-text {
+  color: white;
 }
 
-.img-form{
-  border-radius: 50%; 
+.img-form {
+  border-radius: 50%;
 }
 
 .animation {
@@ -110,7 +112,7 @@ li {
 }
 
 .form {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: black;
   border-radius: 5px;
   border: 2px solid black;
@@ -120,18 +122,15 @@ li {
   display: block;
 }
 
-iframe{
+iframe {
   width: 600px;
   height: auto;
 }
 
-.link-style{
+.link-style {
   color: #0171bf;
 }
 
-/*ANNA Slut*/
-
-/*ELLINOR Start*/
 .FTHEM {
   text-align: center;
   background-color: rgb(0, 0, 0);
@@ -181,9 +180,11 @@ iframe{
   background-image: linear-gradient(-90deg, #fff, #0171bf, #fff);
   font-size: 40px;
 }
-nav, label.burgermenu {
+
+nav,
+label.burgermenu {
   text-align: center;
- background-color: rgba(142, 142, 142, 0.438);
+  background-color: rgba(142, 142, 142, 0.438);
   padding: 30px;
   display: block;
 }
@@ -209,7 +210,6 @@ nav a:hover {
   text-align: center;
   height: auto;
   padding: 35px;
-  /*background-image: url(images/code.jpg);*/
 }
 
 footer {
@@ -230,7 +230,7 @@ video {
   margin-bottom: 50px;
 }
 
-.hnav a:hover{
+.hnav a:hover {
   color: indigo;
 }
 
@@ -285,36 +285,32 @@ video {
   height: auto;
 }
 
-.startsida{
-    background-image: url(images/code.jpg);
+.startsida {
+  background-image: url(images/code.jpg);
 }
 
-.hem-pic{
-    width: 100vh;
-    height: auto;
-    padding: 40px;
-    opacity: 0.80;
-    border: groove;
+.hem-vid {
+  width: 100vh;
+  height: auto;
+  padding: 40px;
+  opacity: 0.8;
+  border: groove;
 }
- html{
-   scroll-behavior: smooth;
- }
 
- footer>p>a{
-   text-decoration: none;
-   color: black;
-   font-size: 21px;
- }
+html {
+  scroll-behavior: smooth;
+}
 
- footer>p>a:hover{
+footer > p > a {
   text-decoration: none;
-  color: #6B5B95;
+  color: black;
+  font-size: 21px;
 }
 
-
-/*ELLINOR Slut*/
-
-/* tengils kod börjar */
+footer > p > a:hover {
+  text-decoration: none;
+  color: #6b5b95;
+}
 
 .faces {
   display: none;
@@ -351,12 +347,10 @@ video {
 
 .subject {
   padding: 5px;
-  /*background-color: rgba(121, 121, 121, 0.473);*/
   background-image: url(images/marmor2.jpg);
   border-radius: 1%;
   margin-bottom: 40px;
   margin-top: 40px;
-  
 }
 
 .subject h2,
@@ -368,11 +362,13 @@ video {
 .bonus:hover {
   background-color: #000;
 }
+
 .runcode:hover {
   background-color: #3d3;
 }
 
-.bonus, .runcode {
+.bonus,
+.runcode {
   width: fit-content;
   padding: 10px;
   background-color: #1b1;
@@ -387,32 +383,34 @@ video {
 canvas {
   background-color: #fff;
 }
+
 .codefield {
   width: 100%;
   border-color: #0ee;
 }
 
-/* hamburgargrejer */
+/* Hamburgar-knapp */
 #burgerbutton {
   display: none;
 }
 #burgermenu {
   display: none;
 }
-#burgerbutton:checked~#burgermenu {
+#burgerbutton:checked ~ #burgermenu {
   display: block;
 }
+/* Hamburgar-knapp */
 
 .border {
   border: #000 1px solid;
 }
 
-@media (max-width:800px){
+@media (max-width: 800px) {
   .main-content {
     padding: 0;
     margin-top: 30px;
   }
-  
+
   .col {
     display: block;
     margin: 5px 0;
@@ -427,8 +425,6 @@ canvas {
     width: 300px;
   }
   .prototyp {
-    /*width: 300px;
-    height: auto;*/
     display: none;
   }
   img {
@@ -437,15 +433,14 @@ canvas {
   }
   .xd-tutorial > ul > li {
     text-align: left;
-    margin: 0px
+    margin: 0px;
   }
 
-  iframe{
+  iframe {
     width: 100%;
     height: auto;
     padding: 10px;
   }
-
 
   .img {
     display: block;
@@ -454,20 +449,17 @@ canvas {
     position: fixed;
     text-align: center;
   }
-  .hem-pic{
-    width: 200px;
+  .hem-vid {
+    width: 300px;
     height: auto;
     padding: 20px;
-    opacity: 0.80;
+    opacity: 0.8;
     border: groove;
   }
 }
 
-
-
-
-/* burgerstuff */
-@media (min-width:800px){
+/* Hamburgar-knapp */
+@media (min-width: 800px) {
   nav > a {
     display: inline;
   }
@@ -477,7 +469,7 @@ canvas {
   label.burgermenu {
     display: none;
   }
-  html{
+  html {
     scroll-behavior: smooth;
   }
 }
@@ -486,19 +478,16 @@ img {
   margin: 10px;
 }
 
-
-
-/* tengils kod slutar */
-
-/*FRIDA start */
-
 .clearfix {
   clear: both;
   overflow: auto;
 }
 
-h1,h2,h3,h4,blockquote{
-  
+h1,
+h2,
+h3,
+h4,
+blockquote {
   font-family: "Old Standard TT", serif;
 }
 
@@ -511,19 +500,17 @@ ol > * {
   list-style-position: inside;
 }
 
-
-/*FRIDA slut*/
-
-.padding-ex2>p{
+.padding-ex2 > p {
   padding: 1px;
   margin-top: 1px;
   margin-bottom: 1px;
 }
 
-.padding-ex1{
+.padding-ex1 {
   padding: 20px;
 }
 
-.padding-ex1>h4, .padding-ex1>h3{
+.padding-ex1 > h4,
+.padding-ex1 > h3 {
   padding: 20px;
 }
