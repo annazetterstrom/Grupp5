@@ -293,7 +293,7 @@ video {
   width: 100vh;
   height: auto;
   padding: 40px;
-  opacity: 0.8;
+  opacity: 0.85;
   border: groove;
 }
 
@@ -453,7 +453,7 @@ canvas {
     width: 300px;
     height: auto;
     padding: 20px;
-    opacity: 0.8;
+    opacity: 0.85;
     border: groove;
   }
 }
