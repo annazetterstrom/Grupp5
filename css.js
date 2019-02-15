@@ -23,6 +23,7 @@ let radiusimage = document.getElementById('radiusimage');
 let radiusspan = document.getElementById('radiusspan');
 radiusimage.addEventListener('click', toggleradius);
 
+//togglar border-radius mellan 0 och 50% på bilden.
 function toggleradius(){
   let borderradius = radiusimage.style.borderRadius;
   if(borderradius=='50%'){
@@ -40,14 +41,15 @@ let animationbutton = document.getElementById('animationbutton');
 let balldiv =  document.getElementById('balldiv');
 let animationradius = document.getElementById('animationradius');
 
-animationbutton.addEventListener('click',switchWidth);
+animationbutton.addEventListener('click',switchBorderRadius);
 
-function switchWidth(){
-  if(ballradius.value>0 && ballradius.value<=100){
+//ändrar border-radius för animationdiven. Ger felmeddelande om input inte är mellan 0 och 100.
+function switchBorderRadius(){
+  if(ballradius.value>=0 && ballradius.value<=100){
     let borderradius = ballradius.value;
     balldiv.style.borderRadius = borderradius + "%";
     animationradius.innerText = borderradius;
   } else {
-    alert('Mata in ett tal mellan 1 och 100');
+    alert('Mata in ett tal mellan 0 och 100');
   }
 }

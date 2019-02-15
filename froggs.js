@@ -33,6 +33,7 @@ function Smiley(x, y, xv, yv, r, color, picture){
             this.xv*=(-1);
         }
     }
+    //målar bild på person eller på en groda om foto inte inkluderats
     this.draw = function(){
         if(picture===""){
             cty.beginPath();
@@ -59,16 +60,16 @@ function Smiley(x, y, xv, yv, r, color, picture){
 let smilies = [new Smiley(150,60,0,0,40,'lightcoral',''), new Smiley(20,110,1,0,20,'cadetblue',frida), new Smiley(70,100,1,0,20,'burlywood',anna), new Smiley(200,105,1,0,20,'burlywood',ellinor), new Smiley(250,100,1,0,20,'cadetblue', niklas)];
 animateSmiley();
 
+//målar upp och flyttar figurerna i smilies
 function animateSmiley(){
     cty.clearRect(0,0,300,200);
     for(let i=0;i<smilies.length;i++){
         smilies[i].draw();
         smilies[i].move();
-
     }
     requestAnimationFrame(animateSmiley);
 }
-
+//öppnar en linkedin-länk om ett av ansiktena/grodorna blev klickad.
 function checkLink(e){
     let rect = canvas.getBoundingClientRect();
     let x = e.clientX - rect.left, y = e.clientY - rect.top; //x,y relativt canvasen
